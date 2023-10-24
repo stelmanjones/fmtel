@@ -118,7 +118,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 				Add(*pterm.
 					Bold.
 					ToStyle()).
-				Sprintf("\n\nFMTEL | Version: 0.1.3 \n\n%s %s %s\n\n", pterm.FgWhite.Sprint(currentCar.Maker), currentCar.Model, pterm.FgDarkGray.ToStyle().Sprintf("(%d)", currentCar.Year)))
+				Sprintf("\n\nFMTEL | Version: 0.1.0 \n\n%s %s %s\n\n", pterm.FgWhite.Sprint(currentCar.Maker), currentCar.Model, pterm.FgDarkGray.ToStyle().Sprintf("(%d)", currentCar.Year)))
 	tires := WheelTempWidget(packet, &app.Settings)
 	layout, err := pterm.DefaultPanel.WithPadding(4).WithPanels(pterm.Panels{
 		{{Data: title}},
@@ -131,4 +131,3 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 	}
 	return layout
 }
-
