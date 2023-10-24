@@ -9,14 +9,15 @@ import (
 	"github.com/stelmanjones/fmtel"
 )
 
-func ReadPackets(conn net.PacketConn, ch chan pkg.ForzaPacket) {
-	buf := make([]byte, binary.Size(pkg.ForzaPacket{}))
+// Reads telemetry data packets and returns them through provided channel.
+func ReadPackets(conn net.PacketConn, ch chan fmtel.ForzaPacket) {
+	buf := make([]byte, binary.Size(fmtel.ForzaPacket{}))
 	for {
 		_, _, err := conn.ReadFrom(buf)
 		if err != nil {
 			log.Error(err)
 		}
-		var packet pkg.ForzaPacket
+		var packet fmtel.ForzaPacket
 		err = binary.Read(bytes.NewReader(buf), binary.LittleEndian, &packet)
 		if err != nil {
 			log.Error(err)

@@ -15,12 +15,12 @@ var DefaultCar = Car{
 }
 
 type Car struct {
-	CarOrdinal int32 `json:"car_ordinal"`
 	Group      string `json:"group"`
 	Maker      string `json:"maker"`
 	Model      string `json:"model"`
-	Year       int32 `json:"year"`
-	Weight     int32 `json:"weight"`
+	CarOrdinal int32  `json:"car_ordinal"`
+	Year       int32  `json:"year"`
+	Weight     int32  `json:"weight"`
 }
 
 func FindCar(a []Car, x int32) int32 {
@@ -31,27 +31,27 @@ func FindCar(a []Car, x int32) int32 {
 	}
 	return -1
 }
-func HasCarChanged(old int32,new int32) bool {
-  return new == old
 
+func HasCarChanged(old int32, new int32) bool {
+	return new == old
 }
 
-func SetCurrentCar(cars []Car,id int32) Car {
-  car := FindCar(cars, id)
-				if car == -1 {
-					return DefaultCar
-				} else {
-					return cars[car]
-				}
+func SetCurrentCar(cars []Car, id int32) Car {
+	car := FindCar(cars, id)
+	if car == -1 {
+		return DefaultCar
+	} else {
+		return cars[car]
+	}
 }
 
 func ReadCarList(path string) ([]Car, error) {
-	cars := make([]Car,700)
+	cars := make([]Car, 700)
 	content, err := os.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
-  
+
 	err = json.Unmarshal(content, &cars)
 	if err != nil {
 		return nil, err
@@ -59,4 +59,3 @@ func ReadCarList(path string) ([]Car, error) {
 
 	return cars, nil
 }
-
