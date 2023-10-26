@@ -4,14 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	//"math"
-
-	//"github.com/pterm/pterm/putils"
-	//flag "github.com/spf13/pflag"
 	"github.com/charmbracelet/log"
 	"github.com/pterm/pterm"
 	"github.com/stelmanjones/fmtel"
-	"github.com/stelmanjones/fmtel/cmd/fmtui/graph"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/pedals"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
 	"github.com/stelmanjones/fmtel/units"
 )
@@ -49,7 +45,6 @@ func WheelTempWidget(packet *fmtel.ForzaPacket, settings *types.Settings) string
 func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 	currentCar := app.CurrentCar
 
-	inputGraph := graph.RenderInputGraph(app.GraphData, *packet, app.GraphDataPoints)
 	boost := func() float32 {
 		if packet.Boost < 1 {
 			return 0.0
@@ -58,10 +53,31 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		}
 	}()
 
-	var currentTime time.Duration = time.Duration(packet.CurrentRaceTime * float32(time.Second))
-	var currentLapTime time.Duration = time.Duration(packet.CurrentLap * float32(time.Second))
-	var bestLapTime time.Duration = time.Duration(packet.BestLap * float32(time.Second))
-	var lastLapTime time.Duration = time.Duration(packet.LastLap * float32(time.Second))
+	pedals, err := pedals.DefaultPedalInputBar.WithHeight(20).WithWidth(30).WithBars(pterm.Bars{
+		pterm.Bar{
+			Label: "Throttle",
+			Value: int(packet.Accel),
+			Style: pterm.FgGreen.ToStyle(),
+		},
+		pterm.Bar{
+			Label: "Brake",
+			Value: int(packet.Brake),
+			Style: pterm.FgRed.ToStyle(),
+		},
+		pterm.Bar{
+			Label: "Clutch",
+			Value: int(packet.Clutch),
+			Style: pterm.FgYellow.ToStyle(),
+		},
+	}).Srender()
+	if err != nil {
+		log.Error(err)
+	}
+
+	currentTime := time.Duration(packet.CurrentRaceTime * float32(time.Second))
+	currentLapTime := time.Duration(packet.CurrentLap * float32(time.Second))
+	bestLapTime := time.Duration(packet.BestLap * float32(time.Second))
+	lastLapTime := time.Duration(packet.LastLap * float32(time.Second))
 
 	stats, err := pterm.DefaultTable.WithLeftAlignment().WithData(pterm.TableData{
 		{
@@ -124,7 +140,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		{{Data: title}},
 		{{Data: pterm.DefaultBox.WithTitle("Race Info").WithBoxStyle(pterm.FgLightBlue.ToStyle()).Sprint(lapStats)}, {Data: tires}},
 		{{Data: pterm.Sprintf("%s", stats)}},
-		{{Data: pterm.Sprintf("\n\n%s", inputGraph)}},
+		{{Data: pedals}},
 	}).Srender()
 	if err != nil {
 		log.Error(err)

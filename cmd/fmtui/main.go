@@ -22,17 +22,14 @@ import (
 	"github.com/stelmanjones/fmtel/cars"
 	"github.com/stelmanjones/fmtel/server"
 	"github.com/stelmanjones/fmtel/units"
-	// "github.com/pterm/pterm"
 )
 
 var Pack = fmtel.DefaultForzaPacket
 
 type App struct {
-	Settings        Settings
-	CarList         []cars.Car
-	GraphData       [][]float64
-	CurrentCar      cars.Car
-	GraphDataPoints int
+	Settings   Settings
+	CarList    []cars.Car
+	CurrentCar cars.Car
 }
 
 type Settings struct {
@@ -45,6 +42,7 @@ var (
 	udpAddress  string
 	enableJson  bool
 	jsonAddress string
+	noUi        bool
 	upgrader    = websocket.Upgrader{} // use default options
 )
 
@@ -92,12 +90,12 @@ func responder(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func serveHTTP() {
+func serveHTTP(address string) {
 	http.HandleFunc("/forza/ws", wsHandler)
 	http.HandleFunc("/forza", responder)
 
-	log.Debugf("JSON Telemetry Server started at http://localhost%s", ":9999")
-	log.Fatal(http.ListenAndServe(":9999", nil))
+	log.Debugf("JSON Telemetry Server started at %s", jsonAddress)
+	log.Fatal(http.ListenAndServe(address, nil))
 }
 
 func enableCors(w *http.ResponseWriter) {
@@ -109,7 +107,9 @@ func main() {
 	flag.StringVar(&udpAddress, "udp-addr", ":7777", "Set UDP connection address.")
 	flag.StringVar(&jsonAddress, "json-addr", ":9999", "Set JSON server address.")
 	flag.BoolVar(&enableJson, "json", false, "Enable JSON server.")
+	flag.BoolVar(&noUi, "no-ui", false, "Run without TUI.")
 	flag.Lookup("json").NoOptDefVal = "true"
+	flag.Lookup("no-ui").NoOptDefVal = "false"
 	flag.Parse()
 
 	out := termenv.DefaultOutput()
@@ -117,10 +117,12 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	out.AltScreen()
-	cursor.Hide()
+	if !noUi {
+		out.AltScreen()
+		cursor.Hide()
 
-	defer cursor.Show()
+		defer cursor.Show()
+	}
 
 	settings := types.Settings{
 		Temperature: units.TempFromString(temp),
@@ -131,11 +133,9 @@ func main() {
 		log.Error(err)
 	}
 	app := types.App{
-		CurrentCar:      cars.DefaultCar,
-		CarList:         carList,
-		GraphData:       make([][]float64, 3, 100),
-		GraphDataPoints: 100,
-		Settings:        settings,
+		CurrentCar: cars.DefaultCar,
+		CarList:    carList,
+		Settings:   settings,
 	}
 	in := make(chan keys.Key)
 	ch := make(chan fmtel.ForzaPacket)
@@ -154,7 +154,7 @@ func main() {
 	go server.ReadPackets(conn, ch)
 	go input.ListenForInput(in)
 	if enableJson {
-		go serveHTTP()
+		go serveHTTP(jsonAddress)
 	}
 	out.ClearScreen()
 	var packet fmtel.ForzaPacket
@@ -197,22 +197,22 @@ func main() {
 				continue
 			}
 
-			if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
-				result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
-				app.CurrentCar = result
-			}
-
 			Pack = packet
-			// area.Clear()
-			layout := tui.Render(&packet, &app)
-			if err != nil {
-				log.Error(err)
-			}
 
-			// out.ClearScreen()
-			out.MoveCursor(0, 0)
-			out.WriteString(layout)
-			// area.Update(layout)
+			if !noUi {
+				if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
+					result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
+					app.CurrentCar = result
+				}
+
+				layout := tui.Render(&packet, &app)
+				if err != nil {
+					log.Error(err)
+				}
+
+				out.MoveCursor(0, 0)
+				out.WriteString(layout)
+			}
 
 		}
 	}
