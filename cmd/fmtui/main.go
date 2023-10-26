@@ -7,7 +7,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/gorilla/websocket"
 	"github.com/muesli/termenv"
 
 	"atomicgo.dev/cursor"
@@ -18,6 +17,7 @@ import (
 	"github.com/stelmanjones/fmtel/cmd/fmtui/tui"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
 
+	"github.com/alexandrevicenzi/go-sse"
 	"github.com/charmbracelet/log"
 	"github.com/stelmanjones/fmtel/cars"
 	"github.com/stelmanjones/fmtel/server"
@@ -37,42 +37,17 @@ type Settings struct {
 	UdpAddress  string
 }
 
+// HACK: Move these to the settings struct?
 var (
-	temp        string
-	udpAddress  string
-	enableJson  bool
-	jsonAddress string
-	noUi        bool
-	upgrader    = websocket.Upgrader{} // use default options
+	temp       string
+	udpAddress string
+	enableJson bool
+	enableSSE  bool
+	baseUrl    string
+	noUi       bool
 )
 
-func wsHandler(w http.ResponseWriter, r *http.Request) {
-	c, err := upgrader.Upgrade(w, r, nil)
-	if err != nil {
-		log.Print("upgrade:", err)
-		return
-	}
-	defer c.Close()
-	for {
-		mt, _, err := c.ReadMessage()
-		if err != nil {
-			log.Error("read:", err)
-			break
-		}
-		data, err := Pack.ToJson()
-		if err != nil {
-			log.Error("Serialization error:", err)
-			break
-		}
-		err = c.WriteMessage(mt, data)
-		if err != nil {
-			log.Error("write:", err)
-			break
-		}
-		time.Sleep(20 * time.Millisecond)
-	}
-}
-
+// TODO: Rename this function.
 func responder(w http.ResponseWriter, r *http.Request) {
 	data, err := Pack.ToJson()
 	if err != nil {
@@ -91,10 +66,40 @@ func responder(w http.ResponseWriter, r *http.Request) {
 }
 
 func serveHTTP(address string) {
-	http.HandleFunc("/forza/ws", wsHandler)
-	http.HandleFunc("/forza", responder)
+	if enableSSE {
+		s := sse.NewServer(&sse.Options{
+			Headers: map[string]string{
+				"Access-Control-Allow-Origin": "*",
+			},
+		})
+		defer s.Shutdown()
+		http.Handle("/sse", s)
 
-	log.Debugf("JSON Telemetry Server started at %s", jsonAddress)
+		// HACK: There is probably a better way to do this loop.
+		go func() {
+			ticker := time.Tick(200 * time.Millisecond)
+			for {
+				data, err := Pack.ToJson()
+				if err != nil {
+					log.Error(err)
+					return
+				}
+
+				<-ticker
+				if s.ClientCount() == 0 {
+					log.Debug("No clients connected")
+					time.Sleep(1 * time.Second)
+					continue
+				}
+				s.SendMessage("/sse", sse.SimpleMessage(string(data)))
+			}
+		}()
+	}
+	if enableJson {
+		http.HandleFunc("/json", responder)
+	}
+
+	log.Debugf("Telemetry Server started at %s", baseUrl)
 	log.Fatal(http.ListenAndServe(address, nil))
 }
 
@@ -105,23 +110,28 @@ func enableCors(w *http.ResponseWriter) {
 func main() {
 	flag.StringVar(&temp, "temp", "celsius", "Set temperature unit.")
 	flag.StringVar(&udpAddress, "udp-addr", ":7777", "Set UDP connection address.")
-	flag.StringVar(&jsonAddress, "json-addr", ":9999", "Set JSON server address.")
-	flag.BoolVar(&enableJson, "json", false, "Enable JSON server.")
+	flag.StringVar(&baseUrl, "base-url", ":9999", "Set telemetry server address.")
+	flag.BoolVar(&enableJson, "json", false, "Enable JSON endpoint.")
+	flag.BoolVar(&enableSSE, "sse", false, "Enable SSE endpoint.")
 	flag.BoolVar(&noUi, "no-ui", false, "Run without TUI.")
 	flag.Lookup("json").NoOptDefVal = "true"
-	flag.Lookup("no-ui").NoOptDefVal = "false"
+	flag.Lookup("sse").NoOptDefVal = "true"
+	flag.Lookup("no-ui").NoOptDefVal = "true"
 	flag.Parse()
 
 	out := termenv.DefaultOutput()
+
 	restoreConsole, err := termenv.EnableVirtualTerminalProcessing(out)
 	if err != nil {
 		panic(err)
 	}
 	if !noUi {
-		out.AltScreen()
 		cursor.Hide()
+		out.AltScreen()
 
 		defer cursor.Show()
+	} else {
+		log.SetLevel(log.DebugLevel)
 	}
 
 	settings := types.Settings{
@@ -143,6 +153,14 @@ func main() {
 		log.Error(err)
 	}
 
+	shutdown := func() {
+		out.ExitAltScreen()
+		restoreConsole()
+		close(in)
+		close(ch)
+		os.Exit(0)
+	}
+
 	conn, err := net.ListenPacket("udp4", settings.UdpAddress)
 	if err != nil {
 		log.Error(err)
@@ -153,8 +171,8 @@ func main() {
 
 	go server.ReadPackets(conn, ch)
 	go input.ListenForInput(in)
-	if enableJson {
-		go serveHTTP(jsonAddress)
+	if enableJson || enableSSE {
+		go serveHTTP(baseUrl)
 	}
 	out.ClearScreen()
 	var packet fmtel.ForzaPacket
@@ -176,9 +194,7 @@ func main() {
 					}
 				case keys.CtrlC, keys.Escape:
 					{
-						out.ExitAltScreen()
-						restoreConsole()
-						os.Exit(0)
+						shutdown()
 					}
 				default:
 					{

@@ -12,6 +12,32 @@ import (
 	"github.com/stelmanjones/fmtel/units"
 )
 
+func PedalWidget(packet *fmtel.ForzaPacket) string {
+	pedals, err := pedals.DefaultPedalInputBar.WithHeight(20).WithWidth(30).WithBars(pterm.Bars{
+		pterm.Bar{
+			Label: "Throttle",
+			Value: int(packet.Accel),
+			Style: pterm.FgGreen.ToStyle(),
+		},
+		pterm.Bar{
+			Label: "Brake",
+			Value: int(packet.Brake),
+			Style: pterm.FgRed.ToStyle(),
+		},
+		pterm.Bar{
+			Label: "Clutch",
+			Value: int(packet.Clutch),
+			Style: pterm.FgYellow.ToStyle(),
+		},
+	}).Srender()
+	if err != nil {
+		log.Error(err)
+	}
+
+	final := pterm.DefaultBox.WithTitleTopLeft().WithTitle("Pedals").WithBoxStyle(pterm.FgGreen.ToStyle()).Sprint(pedals)
+	return final
+}
+
 func WheelTempWidget(packet *fmtel.ForzaPacket, settings *types.Settings) string {
 	var temps fmtel.TireTemperatures
 
@@ -53,26 +79,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		}
 	}()
 
-	pedals, err := pedals.DefaultPedalInputBar.WithHeight(20).WithWidth(30).WithBars(pterm.Bars{
-		pterm.Bar{
-			Label: "Throttle",
-			Value: int(packet.Accel),
-			Style: pterm.FgGreen.ToStyle(),
-		},
-		pterm.Bar{
-			Label: "Brake",
-			Value: int(packet.Brake),
-			Style: pterm.FgRed.ToStyle(),
-		},
-		pterm.Bar{
-			Label: "Clutch",
-			Value: int(packet.Clutch),
-			Style: pterm.FgYellow.ToStyle(),
-		},
-	}).Srender()
-	if err != nil {
-		log.Error(err)
-	}
+	pedals := PedalWidget(packet)
 
 	currentTime := time.Duration(packet.CurrentRaceTime * float32(time.Second))
 	currentLapTime := time.Duration(packet.CurrentLap * float32(time.Second))
