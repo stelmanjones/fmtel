@@ -2,6 +2,9 @@ package fmtel
 
 import (
 	"encoding/json"
+	"time"
+
+	"github.com/stelmanjones/fmtel/units"
 )
 
 type ForzaPacket struct {
@@ -147,22 +150,102 @@ type ForzaPacket struct {
 	TrackOrdinal int32
 }
 
-type TireTemperatures struct {
-	FrontLeft  float32
-	FrontRight float32
-	RearLeft   float32
-	RearRight  float32
+type (
+	TireWear struct {
+		FrontLeft  float32
+		FrontRight float32
+		RearLeft   float32
+		RearRight  float32
+	}
+
+	TireTemperatures struct {
+		FrontLeft  float32
+		FrontRight float32
+		RearLeft   float32
+		RearRight  float32
+	}
+
+	PedalInputs struct {
+		Clutch   uint
+		Brake    uint
+		Throttle uint
+	}
+
+	SuspensionTravel struct {
+		Normalized bool
+		FrontLeft  float32
+		FrontRight float32
+		RearLeft   float32
+		RearRight  float32
+	}
+
+	Position struct {
+		X float32
+		Y float32
+		Z float32
+	}
+)
+
+// Returns current racetime as a formatted string. "03:42.583"
+func (f *ForzaPacket) FmtCurrentRaceTime() (t string) {
+	tm := time.Duration(f.CurrentRaceTime * float32(time.Second))
+	return units.Timespan(tm).Format("04:05.000")
 }
 
-type PedalInputs struct {
-	Clutch   uint
-	Brake    uint
-	Throttle uint
+// Returns current laptime as a formatted string. "03:42.583"
+func (f *ForzaPacket) FmtCurrentLap() (t string) {
+	tm := time.Duration(f.CurrentLap * float32(time.Second))
+	return units.Timespan(tm).Format("04:05.000")
+}
+
+// Returns last laptime as a formatted string. "03:42.583"
+func (f *ForzaPacket) FmtLastLap() (t string) {
+	tm := time.Duration(f.LastLap * float32(time.Second))
+	return units.Timespan(tm).Format("04:05.000")
+}
+
+// Returns best laptime as a formatted string. "03:42.583"
+func (f *ForzaPacket) FmtBestLap() (t string) {
+	tm := time.Duration(f.BestLap * float32(time.Second))
+	return units.Timespan(tm).Format("04:05.000")
+}
+
+// Returns current suspension travel in Meters.
+func (f *ForzaPacket) SuspensionTravelMeters() (s *SuspensionTravel) {
+	s = &SuspensionTravel{
+		Normalized: false,
+		FrontLeft:  f.SuspensionTravelMetersFrontLeft,
+		FrontRight: f.SuspensionTravelMetersFrontRight,
+		RearLeft:   f.SuspensionTravelMetersRearLeft,
+		RearRight:  f.SuspensionTravelMetersRearRight,
+	}
+	return
+}
+
+// Returns current suspension travel as a value betweeen 0(no travel) and 1.0(max travel)
+func (f *ForzaPacket) NormalizedSuspensionTravel() (s *SuspensionTravel) {
+	s = &SuspensionTravel{
+		Normalized: true,
+		FrontLeft:  f.NormalizedSuspensionTravelFrontLeft,
+		FrontRight: f.NormalizedSuspensionTravelFrontRight,
+		RearLeft:   f.NormalizedSuspensionTravelRearLeft,
+		RearRight:  f.NormalizedSuspensionTravelRearRight,
+	}
+	return
+}
+
+// Returns the current coordinates of the car
+func (f *ForzaPacket) CarPosition() (p *Position) {
+	p = &Position{}
+	p.X = f.PositionX
+	p.Y = f.PositionY
+	p.Z = f.PositionZ
+	return
 }
 
 // Returns true if game is paused or not in a race.
-func (m *ForzaPacket) IsPaused() bool {
-	switch m.IsRaceOn {
+func (f *ForzaPacket) IsPaused() bool {
+	switch f.IsRaceOn {
 	case 1:
 		return true
 	default:
@@ -193,6 +276,17 @@ func (m *ForzaPacket) KmPerHour() uint {
 // Returns current engine torque in ft/lbs.
 func (m *ForzaPacket) FootPounds() uint {
 	return uint(float64(m.Torque) / 1.356)
+}
+
+// Returns current tire wear. Between 1.0(no wear) and 0(max wear)
+func (f *ForzaPacket) TireWear() (t *TireWear) {
+	t = &TireWear{
+		FrontLeft:  f.TireWearFrontLeft,
+		FrontRight: f.TireWearFrontRight,
+		RearLeft:   f.TireWearRearLeft,
+		RearRight:  f.TireWearRearRight,
+	}
+	return
 }
 
 // Returns current tire temperatures in Celsius.
