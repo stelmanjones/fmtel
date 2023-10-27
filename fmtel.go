@@ -103,6 +103,8 @@ type ForzaPacket struct {
 	// Number of cylinders in the engine
 	NumCylinders int32
 
+	// INFO: Dash format begins here.
+
 	PositionX float32
 	PositionY float32
 	PositionZ float32
