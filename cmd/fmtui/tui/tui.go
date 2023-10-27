@@ -80,7 +80,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 
 	pedals := PedalWidget(packet)
 
-	stats, err := pterm.DefaultTable.WithLeftAlignment().WithData(pterm.TableData{
+	stats, err := pterm.DefaultTable.WithLeftAlignment().WithBoxed(true).WithData(pterm.TableData{
 		{
 			"Drivetrain Type: ", packet.FmtDrivetrainType(),
 			"Car Class:", packet.FmtCarClass(),
@@ -137,7 +137,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 					ToStyle()).
 				Sprintf("\n\nFMTEL | Version: 0.1.1 \n\n%s %s %s\n\n", pterm.FgWhite.Sprint(currentCar.Maker), currentCar.Model, pterm.FgDarkGray.ToStyle().Sprintf("(%d)", currentCar.Year)))
 	tires := WheelTempWidget(packet, &app.Settings)
-	layout, err := pterm.DefaultPanel.WithPadding(4).WithPanels(pterm.Panels{
+	layout, err := pterm.DefaultPanel.WithPadding(4).WithBottomPadding(2).WithPanels(pterm.Panels{
 		{{Data: title}},
 		{{Data: pterm.DefaultBox.WithTitle("Race Info").WithBoxStyle(pterm.FgLightBlue.ToStyle()).Sprint(lapStats)}, {Data: tires}},
 		{{Data: pterm.Sprintf("%s", stats)}},

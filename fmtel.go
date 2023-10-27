@@ -190,7 +190,7 @@ type (
 
 // Returns current racetime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtCurrentRaceTime() (t string) {
-	return units.Timespan(time.Duration(f.CurrentRaceTime * float32(time.Second))).Format("04:05.000")
+	return units.Timespan(time.Duration(f.CurrentRaceTime * float32(time.Second))).Format("02:04:05.000")
 }
 
 // Returns current laptime as a formatted string. "03:42.583"
