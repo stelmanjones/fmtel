@@ -2,7 +2,6 @@ package tui
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/charmbracelet/log"
 	"github.com/pterm/pterm"
@@ -51,7 +50,7 @@ func WheelTempWidget(packet *fmtel.ForzaPacket, settings *types.Settings) string
 		}
 	default:
 		{
-			temps = *packet.TireTempsInCelsius()
+			temps = *packet.TireTempsCelsius()
 		}
 	}
 
@@ -81,15 +80,10 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 
 	pedals := PedalWidget(packet)
 
-	currentTime := time.Duration(packet.CurrentRaceTime * float32(time.Second))
-	currentLapTime := time.Duration(packet.CurrentLap * float32(time.Second))
-	bestLapTime := time.Duration(packet.BestLap * float32(time.Second))
-	lastLapTime := time.Duration(packet.LastLap * float32(time.Second))
-
 	stats, err := pterm.DefaultTable.WithLeftAlignment().WithData(pterm.TableData{
 		{
-			"Drivetrain Type: ", packet.ParsedDrivetrainType(),
-			"Car Class:", packet.ParsedCarClass(),
+			"Drivetrain Type: ", packet.FmtDrivetrainType(),
+			"Car Class:", packet.FmtCarClass(),
 			"PI:", fmt.Sprintf("%3d", packet.CarPerformanceIndex),
 		},
 
@@ -124,10 +118,10 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 	lapStats, err := pterm.DefaultTable.WithLeftAlignment().WithData(pterm.TableData{
 		{"Postition:", fmt.Sprintf("%2d", packet.RacePosition)},
 		{"Lap: ", fmt.Sprintf("%2d", packet.LapNumber)},
-		{"Laptime:", units.Timespan(currentLapTime).Format("04:05.000")},
-		{"Last Lap:", units.Timespan(lastLapTime).Format("04:05.000")},
-		{"Best Lap:", units.Timespan(bestLapTime).Format("04:05.000")},
-		{"Current Racetime:", units.Timespan(currentTime).Format("15:04:05.00")},
+		{"Laptime:", packet.FmtCurrentLap()},
+		{"Last Lap:", packet.FmtLastLap()},
+		{"Best Lap:", packet.FmtBestLap()},
+		{"Current Racetime:", packet.FmtCurrentRaceTime()},
 	}).Srender()
 	if err != nil {
 		log.Error(err)
