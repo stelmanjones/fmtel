@@ -72,7 +72,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 	currentCar := app.CurrentCar
 
 	boost := func() float32 {
-		if packet.Boost < 1 {
+		if packet.Boost <= 0 {
 			return 0.0
 		} else {
 			return packet.Boost
