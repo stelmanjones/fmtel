@@ -24,32 +24,21 @@ import (
 	"github.com/stelmanjones/fmtel/units"
 )
 
+// Pack is just a global packet
 var Pack = fmtel.DefaultForzaPacket
-
-type App struct {
-	Settings   Settings
-	CarList    []cars.Car
-	CurrentCar cars.Car
-}
-
-type Settings struct {
-	Temperature units.Temperature
-	UdpAddress  string
-}
 
 // HACK: Move these to the settings struct?
 var (
 	temp       string
 	udpAddress string
-	enableJson bool
+	enableJSON bool
 	enableSSE  bool
-	baseUrl    string
-	noUi       bool
+	baseURL    string
+	noUI       bool
 )
 
-// TODO: Rename this function.
-func responder(w http.ResponseWriter, r *http.Request) {
-	data, err := Pack.ToJson()
+func jsonResponder(w http.ResponseWriter, r *http.Request) {
+	data, err := Pack.ToJSON()
 	if err != nil {
 		log.Error(err)
 	}
@@ -79,7 +68,7 @@ func serveHTTP(address string) {
 		go func() {
 			ticker := time.Tick(200 * time.Millisecond)
 			for {
-				data, err := Pack.ToJson()
+				data, err := Pack.ToJSON()
 				if err != nil {
 					log.Error(err)
 					return
@@ -95,11 +84,11 @@ func serveHTTP(address string) {
 			}
 		}()
 	}
-	if enableJson {
-		http.HandleFunc("/json", responder)
+	if enableJSON {
+		http.HandleFunc("/json", jsonResponder)
 	}
 
-	log.Debugf("Telemetry Server started at %s", baseUrl)
+	log.Debugf("Telemetry Server started at %s", baseURL)
 	log.Fatal(http.ListenAndServe(address, nil))
 }
 
@@ -110,10 +99,10 @@ func enableCors(w *http.ResponseWriter) {
 func main() {
 	flag.StringVar(&temp, "temp", "celsius", "Set temperature unit.")
 	flag.StringVar(&udpAddress, "udp-addr", ":7777", "Set UDP connection address.")
-	flag.StringVar(&baseUrl, "base-url", ":9999", "Set telemetry server address.")
-	flag.BoolVar(&enableJson, "json", false, "Enable JSON endpoint.")
+	flag.StringVar(&baseURL, "base-url", ":9999", "Set telemetry server address.")
+	flag.BoolVar(&enableJSON, "json", false, "Enable JSON endpoint.")
 	flag.BoolVar(&enableSSE, "sse", false, "Enable SSE endpoint.")
-	flag.BoolVar(&noUi, "no-ui", false, "Run without TUI.")
+	flag.BoolVar(&noUI, "no-ui", false, "Run without TUI.")
 	flag.Lookup("json").NoOptDefVal = "true"
 	flag.Lookup("sse").NoOptDefVal = "true"
 	flag.Lookup("no-ui").NoOptDefVal = "true"
@@ -125,7 +114,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	if !noUi {
+	if !noUI {
 		cursor.Hide()
 		out.AltScreen()
 
@@ -171,8 +160,8 @@ func main() {
 
 	go server.ReadPackets(conn, ch)
 	go input.ListenForInput(in)
-	if enableJson || enableSSE {
-		go serveHTTP(baseUrl)
+	if enableJSON || enableSSE {
+		go serveHTTP(baseURL)
 	}
 	out.ClearScreen()
 	var packet fmtel.ForzaPacket
@@ -181,16 +170,29 @@ func main() {
 		case key := <-in:
 			{
 				switch key.Code {
-				case keys.CtrlT:
+				case keys.RuneKey:
 					{
-						t := func() units.Temperature {
-							if app.Settings.Temperature == units.CELSIUS {
-								return units.FAHRENHEIT
-							} else {
-								return units.CELSIUS
+						switch key.String() {
+						case "q":
+							{
+								shutdown()
 							}
-						}()
-						app.Settings.Temperature = t
+						case "t":
+							{
+								t := func() units.Temperature {
+									if app.Settings.Temperature == units.CELSIUS {
+										return units.FAHRENHEIT
+									} 
+										return units.CELSIUS
+									
+								}()
+								app.Settings.Temperature = t
+
+							}
+						default:
+							{
+							}
+						}
 					}
 				case keys.CtrlC, keys.Escape:
 					{
@@ -215,7 +217,7 @@ func main() {
 
 			Pack = packet
 
-			if !noUi {
+			if !noUI {
 				if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
 					result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
 					app.CurrentCar = result

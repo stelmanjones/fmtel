@@ -1,8 +1,9 @@
-package input
+package main
 
 import (
 	"atomicgo.dev/keyboard"
 	"atomicgo.dev/keyboard/keys"
+	"github.com/charmbracelet/log"
 )
 
 func ListenForInput(ch chan keys.Key) error {
@@ -12,17 +13,12 @@ func ListenForInput(ch chan keys.Key) error {
 			{
 				switch key.String() {
 				case "q":
-					{
-						ch <- key
-						return true, nil
-					}
+					return true, nil
 				default:
-					{
-						ch <- key
-						return false, nil
 
-					}
 				}
+				log.Info("key", key)
+				return false, nil
 			}
 		case keys.CtrlC, keys.Escape:
 			{
@@ -36,4 +32,10 @@ func ListenForInput(ch chan keys.Key) error {
 			}
 		}
 	})
+}
+
+func main() {
+	ch := make(chan keys.Key)
+
+	ListenForInput(ch)
 }

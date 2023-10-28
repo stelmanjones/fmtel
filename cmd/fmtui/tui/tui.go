@@ -11,6 +11,12 @@ import (
 	"github.com/stelmanjones/fmtel/units"
 )
 
+func StatusBar(packet *fmtel.ForzaPacket) string {
+	return pterm.DefaultBasicText.
+		WithStyle(pterm.FgDarkGray.ToStyle()).
+		Sprint("ctrl+c/q/escape: quit • t: switch °C/°F • d: toggle dyno")
+}
+
 func PedalWidget(packet *fmtel.ForzaPacket) string {
 	pedals, err := pedals.DefaultPedalInputBar.WithHeight(20).WithWidth(30).WithBars(pterm.Bars{
 		pterm.Bar{
@@ -90,7 +96,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		{
 			"RPM:", fmt.Sprintf("%5.f rpm", packet.CurrentEngineRpm),
 			"Horsepower: ", fmt.Sprintf("%5d hp", packet.HorsePower()),
-			"Kilowatts: ", fmt.Sprintf("%5d kw", packet.Kilowatts()),
+			"Kilowatts: ", fmt.Sprintf("%5d kw", packet.KiloWatts()),
 		},
 
 		{
@@ -142,6 +148,7 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		{{Data: pterm.DefaultBox.WithTitle("Race Info").WithBoxStyle(pterm.FgLightBlue.ToStyle()).Sprint(lapStats)}, {Data: tires}},
 		{{Data: pterm.Sprintf("%s", stats)}},
 		{{Data: pedals}},
+		{{Data: StatusBar(packet)}},
 	}).Srender()
 	if err != nil {
 		log.Error(err)

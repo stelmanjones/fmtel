@@ -6,15 +6,12 @@ import (
 )
 
 type App struct {
-	Settings        Settings
-	CarList         []cars.Car
-	GraphData       [][]float64
-	CurrentCar      cars.Car
-	GraphDataPoints int
+	Settings   Settings
+	CarList    []cars.Car
+	CurrentCar cars.Car
 }
 
 type Settings struct {
 	Temperature units.Temperature
 	UdpAddress  string
 }
-

@@ -7,6 +7,8 @@ import (
 	"github.com/stelmanjones/fmtel/units"
 )
 
+
+// ForzaPacket represents a parsed UDP Telemetry packet recieved from Forza.
 type ForzaPacket struct {
 	// = 1 when race is on. = 0 when in menus/race stopped
 	IsRaceOn int32
@@ -153,6 +155,7 @@ type ForzaPacket struct {
 }
 
 type (
+	// TireWear represents the current wear of the tires.
 	TireWear struct {
 		FrontLeft  float32
 		FrontRight float32
@@ -160,6 +163,7 @@ type (
 		RearRight  float32
 	}
 
+	// TireTemperatures represents the current temperatures of the tires.
 	TireTemperatures struct {
 		FrontLeft  float32
 		FrontRight float32
@@ -167,12 +171,14 @@ type (
 		RearRight  float32
 	}
 
+	// PedalInputs represents the current inputs of the pedals.
 	PedalInputs struct {
 		Clutch   uint
 		Brake    uint
 		Throttle uint
 	}
 
+	// SuspensionTravel represents the current travel of the suspension.
 	SuspensionTravel struct {
 		Normalized bool
 		FrontLeft  float32
@@ -181,34 +187,34 @@ type (
 		RearRight  float32
 	}
 
+	// Position represents the current position.
 	Position struct {
 		X float32
 		Y float32
 		Z float32
 	}
 )
-
-// Returns current racetime as a formatted string. "03:42.583"
+// FmtCurrentRaceTime returns current racetime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtCurrentRaceTime() (t string) {
 	return units.Timespan(time.Duration(f.CurrentRaceTime * float32(time.Second))).Format("02:04:05.000")
 }
 
-// Returns current laptime as a formatted string. "03:42.583"
+// FmtCurrentLap returns current laptime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtCurrentLap() (t string) {
 	return units.Timespan(time.Duration(f.CurrentLap * float32(time.Second))).Format("04:05.000")
 }
 
-// Returns last laptime as a formatted string. "03:42.583"
+// FmtLastLap returns last laptime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtLastLap() (t string) {
 	return units.Timespan(time.Duration(f.LastLap * float32(time.Second))).Format("04:05.000")
 }
 
-// Returns best laptime as a formatted string. "03:42.583"
+// FmtBestLap returns best laptime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtBestLap() (t string) {
 	return units.Timespan(time.Duration(f.BestLap * float32(time.Second))).Format("04:05.000")
 }
 
-// Returns current suspension travel in Meters.
+// SuspensionTravelMeters returns current suspension travel in Meters.
 func (f *ForzaPacket) SuspensionTravelMeters() (s *SuspensionTravel) {
 	s = &SuspensionTravel{
 		Normalized: false,
@@ -220,7 +226,7 @@ func (f *ForzaPacket) SuspensionTravelMeters() (s *SuspensionTravel) {
 	return
 }
 
-// Returns current suspension travel as a value betweeen 0(no travel) and 1.0(max travel)
+// NormalizedSuspensionTravel returns current suspension travel as a value betweeen 0(no travel) and 1.0(max travel)
 func (f *ForzaPacket) NormalizedSuspensionTravel() (s *SuspensionTravel) {
 	s = &SuspensionTravel{
 		Normalized: true,
@@ -232,7 +238,7 @@ func (f *ForzaPacket) NormalizedSuspensionTravel() (s *SuspensionTravel) {
 	return
 }
 
-// Returns the current coordinates of the car
+// CarPosition returns the current coordinates of the car
 func (f *ForzaPacket) CarPosition() (p *Position) {
 	p = &Position{}
 	p.X = f.PositionX
@@ -241,7 +247,7 @@ func (f *ForzaPacket) CarPosition() (p *Position) {
 	return
 }
 
-// Returns true if game is paused or not in a race
+// IsPaused returns true if game is paused or not in a race
 func (f *ForzaPacket) IsPaused() bool {
 	switch f.IsRaceOn {
 	case 1:
@@ -251,32 +257,32 @@ func (f *ForzaPacket) IsPaused() bool {
 	}
 }
 
-// Returns current engine power output in horsepower
-func (m *ForzaPacket) HorsePower() uint {
-	return uint(m.Power * 0.00134102)
+// HorsePower returns current engine power output in horsepower
+func (f *ForzaPacket) HorsePower() uint {
+	return uint(f.Power * 0.00134102)
 }
 
-// Returns current engine power output in kilowatts
-func (m *ForzaPacket) Kilowatts() uint {
-	return uint(m.Power / 1000)
+// KiloWatts returns current engine power output in kilowatts
+func (f *ForzaPacket) KiloWatts() uint {
+	return uint(f.Power / 1000)
 }
 
-// Returns current speed in mph
-func (m *ForzaPacket) MilesPerHour() uint {
-	return uint(m.Speed * 2.2369362921)
+// MilesPerHour returns current speed in mph
+func (f *ForzaPacket) MilesPerHour() uint {
+	return uint(f.Speed * 2.2369362921)
 }
 
-// Returns current speed in kmph
-func (m *ForzaPacket) KmPerHour() uint {
-	return uint(m.Speed * 3.6)
+// KmPerHour returns current speed in kmph
+func (f *ForzaPacket) KmPerHour() uint {
+	return uint(f.Speed * 3.6)
 }
 
-// Returns current engine torque in ft/lbs
-func (m *ForzaPacket) FootPounds() uint {
-	return uint(float64(m.Torque) / 1.356)
+// FootPounds returns current engine torque in ft/lbs
+func (f *ForzaPacket) FootPounds() uint {
+	return uint(float64(f.Torque) / 1.356)
 }
 
-// Returns current tire wear. Between 1.0(no wear) and 0(max wear)
+// TireWear returns current tire wear. Between 1.0(no wear) and 0(max wear)
 func (f *ForzaPacket) TireWear() (t *TireWear) {
 	t = &TireWear{
 		FrontLeft:  f.TireWearFrontLeft,
@@ -287,24 +293,24 @@ func (f *ForzaPacket) TireWear() (t *TireWear) {
 	return
 }
 
-// Returns current tire temperatures in Celsius
-func (m *ForzaPacket) TireTempsCelsius() *TireTemperatures {
+// TireTempsCelsius returns current tire temperatures in Celsius
+func (f *ForzaPacket) TireTempsCelsius() *TireTemperatures {
 	b := TireTemperatures{
-		(m.TireTempFrontLeft - 32) * 5 / 9,
-		(m.TireTempFrontRight - 32) * 5 / 9,
-		(m.TireTempRearLeft - 32) * 5 / 9,
-		(m.TireTempRearRight - 32) * 5 / 9,
+		(f.TireTempFrontLeft - 32) * 5 / 9,
+		(f.TireTempFrontRight - 32) * 5 / 9,
+		(f.TireTempRearLeft - 32) * 5 / 9,
+		(f.TireTempRearRight - 32) * 5 / 9,
 	}
 	return &b
 }
 
-// Returns the current cars drivetrain type as a label ( FWD , RWD , AWD )
+// FmtDrivetrainType returns the current cars drivetrain type as a label ( FWD , RWD , AWD )
 // If the type cannot be parsed it returns "-"
-func (m *ForzaPacket) FmtDrivetrainType() string {
-	switch m.DrivetrainType {
+func (f *ForzaPacket) FmtDrivetrainType() string {
+	switch f.DrivetrainType {
 	case 0:
 		{
-			switch m.IsRaceOn {
+			switch f.IsRaceOn {
 			case 1:
 				return "FWD"
 			default:
@@ -320,15 +326,15 @@ func (m *ForzaPacket) FmtDrivetrainType() string {
 	}
 }
 
-// Returns current cars class as a formatted label ("D","C","B","A","S","R","P","X") or "-"
-func (x *ForzaPacket) FmtCarClass() string {
-	switch x.CarClass - 1 {
+// FmtCarClass returns current cars class as a formatted label ("D","C","B","A","S","R","P","X") or "-"
+func (f *ForzaPacket) FmtCarClass() string {
+	switch f.CarClass - 1 {
 	case 0:
-		if x.IsRaceOn == 1 {
+		if f.IsRaceOn == 1 {
 			return "D"
-		} else {
-			return "-"
 		}
+			return "-"
+		
 	case 1:
 		return "C"
 	case 2:
@@ -348,10 +354,12 @@ func (x *ForzaPacket) FmtCarClass() string {
 	}
 }
 
-func (m *ForzaPacket) ToJson() ([]byte, error) {
-	return json.Marshal(m)
+// ToJSON converts the ForzaPacket to JSON
+func (f *ForzaPacket) ToJSON() ([]byte, error) {
+	return json.Marshal(f)
 }
 
+// DefaultForzaPacket is a ForzaPacket with all fields set to 0.
 var DefaultForzaPacket = ForzaPacket{
 	IsRaceOn:                             0,
 	TimestampMS:                          0,
