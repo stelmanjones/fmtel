@@ -7,7 +7,6 @@ import (
 	"github.com/stelmanjones/fmtel/units"
 )
 
-
 // ForzaPacket represents a parsed UDP Telemetry packet recieved from Forza.
 type ForzaPacket struct {
 	// = 1 when race is on. = 0 when in menus/race stopped
@@ -194,6 +193,7 @@ type (
 		Z float32
 	}
 )
+
 // FmtCurrentRaceTime returns current racetime as a formatted string. "03:42.583"
 func (f *ForzaPacket) FmtCurrentRaceTime() (t string) {
 	return units.Timespan(time.Duration(f.CurrentRaceTime * float32(time.Second))).Format("02:04:05.000")
@@ -227,6 +227,7 @@ func (f *ForzaPacket) SuspensionTravelMeters() (s *SuspensionTravel) {
 }
 
 // NormalizedSuspensionTravel returns current suspension travel as a value betweeen 0(no travel) and 1.0(max travel)
+
 func (f *ForzaPacket) NormalizedSuspensionTravel() (s *SuspensionTravel) {
 	s = &SuspensionTravel{
 		Normalized: true,
@@ -333,8 +334,8 @@ func (f *ForzaPacket) FmtCarClass() string {
 		if f.IsRaceOn == 1 {
 			return "D"
 		}
-			return "-"
-		
+		return "-"
+
 	case 1:
 		return "C"
 	case 2:

@@ -2,19 +2,62 @@ package tui
 
 import (
 	"fmt"
+	"strconv"
 
 	"github.com/charmbracelet/log"
 	"github.com/pterm/pterm"
 	"github.com/stelmanjones/fmtel"
+	"github.com/stelmanjones/fmtel/cars"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/pedals"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/tui/views"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
 	"github.com/stelmanjones/fmtel/units"
 )
 
-func StatusBar(packet *fmtel.ForzaPacket) string {
-	return pterm.DefaultBasicText.
-		WithStyle(pterm.FgDarkGray.ToStyle()).
-		Sprint("ctrl+c/q/escape: quit • t: switch °C/°F • d: toggle dyno")
+func TitleBar() (t string) {
+	t = pterm.DefaultCenter.
+		WithCenterEachLineSeparately(true).
+		Sprint(
+			pterm.
+				FgGreen.
+				ToStyle().
+				Add(*pterm.
+					Bold.
+					ToStyle()).
+				Sprintf("\n\nFMTEL | Version: 0.1.1"))
+	return
+}
+
+func CarInfo(currentCar *cars.Car) (c string) {
+	c = pterm.DefaultCenter.
+		WithCenterEachLineSeparately(true).
+		Sprint(
+			pterm.
+				FgGreen.
+				ToStyle().
+				Add(*pterm.
+					Bold.
+					ToStyle()).
+				Sprint(pterm.FgWhite.Sprint(currentCar.Maker), " ", currentCar.Model, " ", pterm.FgDarkGray.ToStyle().Sprintf("(%s)", units.PadItoa(int(currentCar.Year), 4))))
+	return
+}
+
+func StatusBar(v views.View) string {
+	switch v {
+	default:
+		{
+			return pterm.DefaultBasicText.
+				WithStyle(pterm.FgDarkGray.ToStyle()).
+				Sprint("ctrl+c/q/escape: quit • t: switch °C/°F • d: toggle dyno")
+		}
+	case views.Dyno:
+		{
+			return pterm.DefaultBasicText.
+				WithStyle(pterm.FgDarkGray.ToStyle()).
+				Sprint("ctrl+c/q/escape: quit • d: toggle dyno • r: reset dyno")
+		}
+
+	}
 }
 
 func PedalWidget(packet *fmtel.ForzaPacket) string {
@@ -39,8 +82,7 @@ func PedalWidget(packet *fmtel.ForzaPacket) string {
 		log.Error(err)
 	}
 
-	final := pterm.DefaultBox.WithTitleTopLeft().WithTitle("Pedals").WithBoxStyle(pterm.FgGreen.ToStyle()).Sprint(pedals)
-	return final
+	return pterm.DefaultBox.WithTitleTopLeft().WithTitle("Pedals").WithBoxStyle(pterm.FgGreen.ToStyle()).Sprint(pedals)
 }
 
 func WheelTempWidget(packet *fmtel.ForzaPacket, settings *types.Settings) string {
@@ -69,13 +111,11 @@ func WheelTempWidget(packet *fmtel.ForzaPacket, settings *types.Settings) string
 		template = pterm.Sprintf("\n        F  \n%3.f°F █   █ %3.f°F \n\n%3.f°F █   █ %3.f°F \n        R\n", temps.FrontLeft, temps.FrontRight, temps.RearLeft, temps.RearRight)
 	}
 
-	final := pterm.DefaultBox.WithBoxStyle(pterm.FgWhite.ToStyle()).WithTitle("Tire Temps").Sprint(template)
-	return final
+	return pterm.DefaultBox.WithBoxStyle(pterm.FgWhite.ToStyle()).WithTitle("Tire Temps").Sprint(template)
 }
 
+// WARN: Refactor ASAP. MEMORY HOG
 func Render(packet *fmtel.ForzaPacket, app *types.App) string {
-	currentCar := app.CurrentCar
-
 	boost := func() float32 {
 		if packet.Boost <= 0 {
 			return 0.0
@@ -90,31 +130,31 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 		{
 			"Drivetrain Type: ", packet.FmtDrivetrainType(),
 			"Car Class:", packet.FmtCarClass(),
-			"PI:", fmt.Sprintf("%3d", packet.CarPerformanceIndex),
+			"PI:", units.PadItoa(int(packet.CarPerformanceIndex), 4),
 		},
 
 		{
-			"RPM:", fmt.Sprintf("%5.f rpm", packet.CurrentEngineRpm),
-			"Horsepower: ", fmt.Sprintf("%5d hp", packet.HorsePower()),
-			"Kilowatts: ", fmt.Sprintf("%5d kw", packet.KiloWatts()),
+			"RPM:", strconv.FormatFloat(float64(packet.CurrentEngineRpm), 'f', 0, 64) + " rpm",
+			"Horsepower: ", units.PadItoa(int(packet.HorsePower()), 5) + " hp",
+			"Kilowatts: ", units.PadItoa(int(packet.KiloWatts()), 4) + " kw",
 		},
 
 		{
-			"Gear:", fmt.Sprintf("%5d", packet.Gear),
-			"Max RPM:", fmt.Sprintf("%5.f rpm", packet.EngineMaxRpm),
-			"Car ID:", fmt.Sprintf("%5d", packet.CarOrdinal),
+			"Gear:", strconv.Itoa(int(packet.Gear)),
+			"Max RPM:", units.PadItoa(int(packet.EngineMaxRpm), 5) + " rpm",
+			"Car ID:", units.PadItoa(int(packet.CarOrdinal), 5),
 		},
 
 		{
-			"Speed (kmh):", fmt.Sprintf("%5d km/h", packet.KmPerHour()),
-			"Idle RPM:", fmt.Sprintf("%5.f rpm", packet.EngineIdleRpm),
-			"Torque (nm):", fmt.Sprintf("%5d nm", uint(packet.Torque)),
+			"Speed (kmh):", units.PadItoa(int(packet.KmPerHour()), 3) + " km/h",
+			"Idle RPM:", units.PadItoa(int(packet.EngineIdleRpm), 5) + " rpm",
+			"Torque (nm):", units.PadUInt(uint(packet.Torque), 4) + " nm",
 		},
 
 		{
-			"Speed (mph):", fmt.Sprintf("%5d mph", packet.MilesPerHour()),
-			"Boost", fmt.Sprintf("%5.f psi", boost),
-			"Torque (ft/lb):", fmt.Sprintf("%5d ft/lb", packet.FootPounds()),
+			"Speed (mph):", units.PadItoa(int(packet.MilesPerHour()), 3) + " mph",
+			"Boost", fmt.Sprintf("%s psi", strconv.FormatFloat(float64(boost), 'f', 3, 64)),
+			"Torque (ft/lb):", units.PadItoa(int(packet.FootPounds()), 4) + " ft/lb",
 		},
 	}).Srender()
 	if err != nil {
@@ -132,23 +172,15 @@ func Render(packet *fmtel.ForzaPacket, app *types.App) string {
 	if err != nil {
 		log.Error(err)
 	}
-	title := pterm.DefaultCenter.
-		WithCenterEachLineSeparately(true).
-		Sprint(
-			pterm.
-				FgGreen.
-				ToStyle().
-				Add(*pterm.
-					Bold.
-					ToStyle()).
-				Sprintf("\n\nFMTEL | Version: 0.1.1 \n\n%s %s %s\n\n", pterm.FgWhite.Sprint(currentCar.Maker), currentCar.Model, pterm.FgDarkGray.ToStyle().Sprintf("(%d)", currentCar.Year)))
+
 	tires := WheelTempWidget(packet, &app.Settings)
-	layout, err := pterm.DefaultPanel.WithPadding(4).WithBottomPadding(2).WithPanels(pterm.Panels{
-		{{Data: title}},
+	layout, err := pterm.DefaultPanel.WithBottomPadding(2).WithPanels(pterm.Panels{
+		{{Data: TitleBar()}},
+		{{Data: CarInfo(&app.CurrentCar)}},
 		{{Data: pterm.DefaultBox.WithTitle("Race Info").WithBoxStyle(pterm.FgLightBlue.ToStyle()).Sprint(lapStats)}, {Data: tires}},
-		{{Data: pterm.Sprintf("%s", stats)}},
+		{{Data: pterm.Sprint(stats)}},
 		{{Data: pedals}},
-		{{Data: StatusBar(packet)}},
+		{{Data: StatusBar(views.Home)}},
 	}).Srender()
 	if err != nil {
 		log.Error(err)

@@ -4,37 +4,41 @@ import (
 	"fmt"
 	"net"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 	"time"
 
-	"github.com/muesli/termenv"
-
 	"atomicgo.dev/cursor"
 	"atomicgo.dev/keyboard/keys"
-	flag "github.com/spf13/pflag"
-	"github.com/stelmanjones/fmtel"
-	"github.com/stelmanjones/fmtel/cmd/fmtui/input"
-	"github.com/stelmanjones/fmtel/cmd/fmtui/tui"
-	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
-
 	"github.com/alexandrevicenzi/go-sse"
 	"github.com/charmbracelet/log"
+	"github.com/muesli/termenv"
+	flag "github.com/spf13/pflag"
+	"github.com/stelmanjones/fmtel"
 	"github.com/stelmanjones/fmtel/cars"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/input"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/pyro"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/tui"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/tui/views"
+	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
 	"github.com/stelmanjones/fmtel/server"
 	"github.com/stelmanjones/fmtel/units"
 )
 
 // Pack is just a global packet
-var Pack = fmtel.DefaultForzaPacket
-
-// HACK: Move these to the settings struct?
 var (
-	temp       string
-	udpAddress string
-	enableJSON bool
-	enableSSE  bool
-	baseURL    string
-	noUI       bool
+	Pack = fmtel.DefaultForzaPacket
+	Dyno = tui.NewDynoView()
+)
+
+var (
+	enableProfiling bool
+	udpAddress      string
+	enableJSON      bool
+	enableSSE       bool
+	baseURL         string
+	UI              bool
+	refreshRate     int
 )
 
 func jsonResponder(w http.ResponseWriter, r *http.Request) {
@@ -77,7 +81,7 @@ func serveHTTP(address string) {
 				<-ticker
 				if s.ClientCount() == 0 {
 					log.Debug("No clients connected")
-					time.Sleep(1 * time.Second)
+					time.Sleep(500 * time.Millisecond)
 					continue
 				}
 				s.SendMessage("/sse", sse.SimpleMessage(string(data)))
@@ -97,16 +101,36 @@ func enableCors(w *http.ResponseWriter) {
 }
 
 func main() {
-	flag.StringVar(&temp, "temp", "celsius", "Set temperature unit.")
 	flag.StringVar(&udpAddress, "udp-addr", ":7777", "Set UDP connection address.")
 	flag.StringVar(&baseURL, "base-url", ":9999", "Set telemetry server address.")
 	flag.BoolVar(&enableJSON, "json", false, "Enable JSON endpoint.")
 	flag.BoolVar(&enableSSE, "sse", false, "Enable SSE endpoint.")
-	flag.BoolVar(&noUI, "no-ui", false, "Run without TUI.")
+	flag.BoolVar(&UI, "tui", false, "Run with TUI.")
+	flag.BoolVarP(&enableProfiling, "profiling", "p", false, "Enables pyroscope profiling for this app.")
+	flag.IntVar(&refreshRate, "refresh", 60, "Set refresh rate per second.")
 	flag.Lookup("json").NoOptDefVal = "true"
 	flag.Lookup("sse").NoOptDefVal = "true"
-	flag.Lookup("no-ui").NoOptDefVal = "true"
+	flag.Lookup("tui").NoOptDefVal = "true"
+	flag.Lookup("profiling").NoOptDefVal = "true"
+
 	flag.Parse()
+
+	if enableProfiling {
+		pyro.RunProfiling()
+	}
+
+	settings := types.Settings{
+		Temperature:     units.CELSIUS,
+		UdpAddress:      udpAddress,
+		EndpointAddress: baseURL,
+		EnableJSON:      enableJSON,
+		EnableSSE:       enableSSE,
+		RefreshRate:     refreshRate,
+	}
+	carList, err := cars.ReadCarList("cars.json")
+	if err != nil {
+		log.Error(err)
+	}
 
 	out := termenv.DefaultOutput()
 
@@ -114,7 +138,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	if !noUI {
+	if UI {
 		cursor.Hide()
 		out.AltScreen()
 
@@ -123,24 +147,15 @@ func main() {
 		log.SetLevel(log.DebugLevel)
 	}
 
-	settings := types.Settings{
-		Temperature: units.TempFromString(temp),
-		UdpAddress:  udpAddress,
-	}
-	carList, err := cars.ReadCarList("cars.json")
-	if err != nil {
-		log.Error(err)
-	}
 	app := types.App{
-		CurrentCar: cars.DefaultCar,
-		CarList:    carList,
-		Settings:   settings,
+		CurrentCar:  cars.DefaultCar,
+		CarList:     carList,
+		Settings:    settings,
+		CurrentView: views.Home,
 	}
+
 	in := make(chan keys.Key)
 	ch := make(chan fmtel.ForzaPacket)
-	if err != nil {
-		log.Error(err)
-	}
 
 	shutdown := func() {
 		out.ExitAltScreen()
@@ -158,10 +173,11 @@ func main() {
 	defer conn.Close()
 	log.Debug("Starting server!", "address", settings.UdpAddress)
 
-	go server.ReadPackets(conn, ch)
+	go server.ReadPackets(conn, ch, app.Settings.RefreshRate)
 	go input.ListenForInput(in)
-	if enableJSON || enableSSE {
-		go serveHTTP(baseURL)
+	if app.Settings.EnableJSON || app.Settings.EnableSSE {
+		log.Debug("Enabled features", "SSE", app.Settings.EnableSSE, "JSON", app.Settings.EnableJSON)
+		go serveHTTP(app.Settings.EndpointAddress)
 	}
 	out.ClearScreen()
 	var packet fmtel.ForzaPacket
@@ -182,12 +198,26 @@ func main() {
 								t := func() units.Temperature {
 									if app.Settings.Temperature == units.CELSIUS {
 										return units.FAHRENHEIT
-									} 
-										return units.CELSIUS
-									
+									}
+									return units.CELSIUS
 								}()
 								app.Settings.Temperature = t
 
+							}
+						case "r":
+							{
+								if app.CurrentView == views.Dyno {
+									Dyno.Reset()
+								}
+							}
+						case "d":
+							{
+								out.ClearScreen()
+								if app.CurrentView != views.Dyno {
+									app.CurrentView = views.Dyno
+								} else {
+									app.CurrentView = views.Home
+								}
 							}
 						default:
 							{
@@ -217,19 +247,39 @@ func main() {
 
 			Pack = packet
 
-			if !noUI {
+			if UI {
 				if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
 					result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
 					app.CurrentCar = result
 				}
+				Dyno.Update(&packet)
 
-				layout := tui.Render(&packet, &app)
-				if err != nil {
-					log.Error(err)
+				// TODO: Split rendering to a separate function that switches on view.
+				switch app.CurrentView {
+
+				case views.Dyno:
+					{
+
+						view, err := tui.RenderDynoView(Dyno, &app.CurrentCar)
+						if err != nil {
+							log.Error(err)
+						}
+						out.MoveCursor(0, 0)
+						out.WriteString(view)
+
+					}
+				case views.Home:
+					{
+
+						layout := tui.Render(&packet, &app)
+						if err != nil {
+							log.Error(err)
+						}
+
+						out.MoveCursor(0, 0)
+						out.WriteString(layout)
+					}
 				}
-
-				out.MoveCursor(0, 0)
-				out.WriteString(layout)
 			}
 
 		}

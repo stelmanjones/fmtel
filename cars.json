@@ -1,0 +1,5778 @@
+[
+  {
+    "model": "NSX",
+    "maker": "Acura",
+    "year": 2017,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2352,
+    "weight": 1725
+  },
+  {
+    "model": "RSX Type S",
+    "maker": "Acura",
+    "year": 2002,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 422,
+    "weight": 1279
+  },
+  {
+    "model": "Integra Type R",
+    "maker": "Acura",
+    "year": 2001,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 368,
+    "weight": 1197
+  },
+  {
+    "model": "A110",
+    "maker": "Alpine",
+    "year": 2017,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2973,
+    "weight": 1103
+  },
+  {
+    "model": "A110 1600s",
+    "maker": "Alpine",
+    "year": 1973,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 1536,
+    "weight": 715
+  },
+  {
+    "model": "#6165 Trick Truck",
+    "maker": "Alumicraft",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3693,
+    "weight": 2608
+  },
+  {
+    "model": "#122 Class 1 Buggy",
+    "maker": "Alumicraft",
+    "year": 2021,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 3549,
+    "weight": 1701
+  },
+  {
+    "model": "Class 10 Race Car",
+    "maker": "Alumicraft",
+    "year": 2015,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 2552,
+    "weight": 998
+  },
+  {
+    "model": "Gremlin X",
+    "maker": "AMC",
+    "year": 1973,
+    "group": "CULT CARS",
+    "car_ordinal": 1482,
+    "weight": 1288
+  },
+  {
+    "model": "Javelin AMX",
+    "maker": "AMC",
+    "year": 1971,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1267,
+    "weight": 1563
+  },
+  {
+    "model": "Rebel �The Machine�",
+    "maker": "AMC",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1572,
+    "weight": 1656
+  },
+  {
+    "model": "M12S Warthog CST",
+    "maker": "AMG TRANSPORT DYNAMICS",
+    "year": 2554,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2574,
+    "weight": 2300
+  },
+  {
+    "model": "Intensa Emozione",
+    "maker": "Apollo",
+    "year": 2018,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3141,
+    "weight": 1250
+  },
+  {
+    "model": "Intensa Emozione Welcome Pack",
+    "maker": "Apollo",
+    "year": 2018,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3682,
+    "weight": 1125
+  },
+  {
+    "model": "Nomad",
+    "maker": "Ariel",
+    "year": 2016,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 2430,
+    "weight": 670
+  },
+  {
+    "model": "Atom 500 V8",
+    "maker": "Ariel",
+    "year": 2013,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1651,
+    "weight": 650
+  },
+  {
+    "model": "KZ1R",
+    "maker": "Ascari",
+    "year": 2012,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1451,
+    "weight": 1350
+  },
+  {
+    "model": "DBX",
+    "maker": "Aston Martin",
+    "year": 2021,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3580,
+    "weight": 2245
+  },
+  {
+    "model": "Vantage",
+    "maker": "Aston Martin",
+    "year": 2019,
+    "group": "GT CARS",
+    "car_ordinal": 3091,
+    "weight": 1586
+  },
+  {
+    "model": "DBS Superleggera",
+    "maker": "Aston Martin",
+    "year": 2019,
+    "group": "SUPER GT",
+    "car_ordinal": 3185,
+    "weight": 1799
+  },
+  {
+    "model": "Valhalla Concept Car",
+    "maker": "Aston Martin",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3364,
+    "weight": 1405
+  },
+  {
+    "model": "DB11",
+    "maker": "Aston Martin",
+    "year": 2017,
+    "group": "SUPER GT",
+    "car_ordinal": 2527,
+    "weight": 1875
+  },
+  {
+    "model": "Vulcan AMR Pro",
+    "maker": "Aston Martin",
+    "year": 2017,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3211,
+    "weight": 1360
+  },
+  {
+    "model": "Vantage GT12",
+    "maker": "Aston Martin",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2493,
+    "weight": 1565
+  },
+  {
+    "model": "V12 Vantage S",
+    "maker": "Aston Martin",
+    "year": 2013,
+    "group": "SUPER GT",
+    "car_ordinal": 2181,
+    "weight": 1665
+  },
+  {
+    "model": "One-77",
+    "maker": "Aston Martin",
+    "year": 2010,
+    "group": "SUPER GT",
+    "car_ordinal": 1181,
+    "weight": 1500
+  },
+  {
+    "model": "DB5",
+    "maker": "Aston Martin",
+    "year": 1964,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 1105,
+    "weight": 1465
+  },
+  {
+    "model": "GT",
+    "maker": "ATS",
+    "year": 2018,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3195,
+    "weight": 1354
+  },
+  {
+    "model": "RS E-Tron GT",
+    "maker": "Audi",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3359,
+    "weight": 2347
+  },
+  {
+    "model": "RS 6 Avant",
+    "maker": "Audi",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3583,
+    "weight": 2075
+  },
+  {
+    "model": "RS 7 Sportback",
+    "maker": "Audi",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3584,
+    "weight": 2065
+  },
+  {
+    "model": "RS 3 Sedan",
+    "maker": "Audi",
+    "year": 2020,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3454,
+    "weight": 1630
+  },
+  {
+    "model": "RS 5 Coupe",
+    "maker": "Audi",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3264,
+    "weight": 1810
+  },
+  {
+    "model": "TT RS",
+    "maker": "Audi",
+    "year": 2018,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3286,
+    "weight": 1500
+  },
+  {
+    "model": "RS 4 Avant",
+    "maker": "Audi",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3318,
+    "weight": 1790
+  },
+  {
+    "model": "R8 V10 plus",
+    "maker": "Audi",
+    "year": 2016,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2473,
+    "weight": 1555
+  },
+  {
+    "model": "S1",
+    "maker": "Audi",
+    "year": 2015,
+    "group": "HOT HATCH",
+    "car_ordinal": 2179,
+    "weight": 1315
+  },
+  {
+    "model": "RS 6 Avant",
+    "maker": "Audi",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2180,
+    "weight": 1935
+  },
+  {
+    "model": "TTS Coupe",
+    "maker": "Audi",
+    "year": 2015,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2182,
+    "weight": 1385
+  },
+  {
+    "model": "RS 4 Avant",
+    "maker": "Audi",
+    "year": 2013,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1607,
+    "weight": 1795
+  },
+  {
+    "model": "RS 7 Sportback",
+    "maker": "Audi",
+    "year": 2013,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2009,
+    "weight": 1955
+  },
+  {
+    "model": "R8 Coup� V10 plus 5.2 FSI quattro",
+    "maker": "Audi",
+    "year": 2013,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2010,
+    "weight": 1670
+  },
+  {
+    "model": "RS 3 Sportback",
+    "maker": "Audi",
+    "year": 2011,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 1216,
+    "weight": 1575
+  },
+  {
+    "model": "RS 5 Coup�",
+    "maker": "Audi",
+    "year": 2011,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1417,
+    "weight": 1737
+  },
+  {
+    "model": "TT RS Coup�",
+    "maker": "Audi",
+    "year": 2010,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1220,
+    "weight": 1494
+  },
+  {
+    "model": "RS 6",
+    "maker": "Audi",
+    "year": 2009,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1184,
+    "weight": 1985
+  },
+  {
+    "model": "RS 4",
+    "maker": "Audi",
+    "year": 2006,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 419,
+    "weight": 1650
+  },
+  {
+    "model": "RS 6",
+    "maker": "Audi",
+    "year": 2003,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 420,
+    "weight": 1825
+  },
+  {
+    "model": "RS 4 Avant",
+    "maker": "Audi",
+    "year": 2001,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 2178,
+    "weight": 1620
+  },
+  {
+    "model": "Avant RS2",
+    "maker": "Audi",
+    "year": 1995,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1370,
+    "weight": 1595
+  },
+  {
+    "model": "#2 Audi Sport Quattro S1",
+    "maker": "Audi",
+    "year": 1986,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 1478,
+    "weight": 1090
+  },
+  {
+    "model": "Sport quattro",
+    "maker": "Audi",
+    "year": 1983,
+    "group": "RETRO RALLY",
+    "car_ordinal": 633,
+    "weight": 1273
+  },
+  {
+    "model": "Sprite MkI",
+    "maker": "Austin-Healey",
+    "year": 1958,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1574,
+    "weight": 664
+  },
+  {
+    "model": "Type D",
+    "maker": "Auto Union",
+    "year": 1939,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2096,
+    "weight": 1277
+  },
+  {
+    "model": "Mono",
+    "maker": "BAC",
+    "year": 2014,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2040,
+    "weight": 614
+  },
+  {
+    "model": "Continental Supersports",
+    "maker": "Bentley",
+    "year": 2017,
+    "group": "GT CARS",
+    "car_ordinal": 2665,
+    "weight": 2281
+  },
+  {
+    "model": "Bentayga",
+    "maker": "Bentley",
+    "year": 2016,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2625,
+    "weight": 2422
+  },
+  {
+    "model": "Turbo R",
+    "maker": "Bentley",
+    "year": 1991,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 3172,
+    "weight": 2410
+  },
+  {
+    "model": "8 Litre",
+    "maker": "Bentley",
+    "year": 1930,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 1372,
+    "weight": 2540
+  },
+  {
+    "model": "Blower 4-1/2 Litre Supercharged",
+    "maker": "Bentley",
+    "year": 1930,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2976,
+    "weight": 1994
+  },
+  {
+    "model": "M4 Competition Coup�",
+    "maker": "BMW",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3645,
+    "weight": 1725
+  },
+  {
+    "model": "M8 Competition Coupe",
+    "maker": "BMW",
+    "year": 2020,
+    "group": "GT CARS",
+    "car_ordinal": 3518,
+    "weight": 1975
+  },
+  {
+    "model": "Z4 Roadster",
+    "maker": "BMW",
+    "year": 2019,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3173,
+    "weight": 1475
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3071,
+    "weight": 1982
+  },
+  {
+    "model": "M2 Coup�",
+    "maker": "BMW",
+    "year": 2016,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2477,
+    "weight": 1565
+  },
+  {
+    "model": "M4 GTS",
+    "maker": "BMW",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2628,
+    "weight": 1510
+  },
+  {
+    "model": "i8",
+    "maker": "BMW",
+    "year": 2015,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2133,
+    "weight": 1533
+  },
+  {
+    "model": "X6 M",
+    "maker": "BMW",
+    "year": 2015,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2431,
+    "weight": 2352
+  },
+  {
+    "model": "M4 Coupe",
+    "maker": "BMW",
+    "year": 2014,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2154,
+    "weight": 1537
+  },
+  {
+    "model": "M6 Coupe",
+    "maker": "BMW",
+    "year": 2013,
+    "group": "GT CARS",
+    "car_ordinal": 2018,
+    "weight": 1930
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 2012,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1388,
+    "weight": 1870
+  },
+  {
+    "model": "X5 M",
+    "maker": "BMW",
+    "year": 2011,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 1350,
+    "weight": 2435
+  },
+  {
+    "model": "1 Series M Coupe",
+    "maker": "BMW",
+    "year": 2011,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1385,
+    "weight": 1495
+  },
+  {
+    "model": "X5 M Forza Edition",
+    "maker": "BMW",
+    "year": 2011,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3556,
+    "weight": 1250
+  },
+  {
+    "model": "M3 GTS",
+    "maker": "BMW",
+    "year": 2010,
+    "group": "TRACK TOYS",
+    "car_ordinal": 1598,
+    "weight": 1546
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 2009,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1126,
+    "weight": 1820
+  },
+  {
+    "model": "M3",
+    "maker": "BMW",
+    "year": 2008,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1011,
+    "weight": 1655
+  },
+  {
+    "model": "Z4 M Coupe",
+    "maker": "BMW",
+    "year": 2008,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1059,
+    "weight": 1495
+  },
+  {
+    "model": "M3",
+    "maker": "BMW",
+    "year": 2005,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 383,
+    "weight": 1549
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 2003,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1367,
+    "weight": 1769
+  },
+  {
+    "model": "M3-GTR",
+    "maker": "BMW",
+    "year": 2002,
+    "group": "TRACK TOYS",
+    "car_ordinal": 565,
+    "weight": 1404
+  },
+  {
+    "model": "Z3 M Coupe",
+    "maker": "BMW",
+    "year": 2002,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1268,
+    "weight": 1438
+  },
+  {
+    "model": "M3",
+    "maker": "BMW",
+    "year": 1997,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 382,
+    "weight": 1460
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 1995,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1418,
+    "weight": 1711
+  },
+  {
+    "model": "M3",
+    "maker": "BMW",
+    "year": 1991,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 642,
+    "weight": 1253
+  },
+  {
+    "model": "M5",
+    "maker": "BMW",
+    "year": 1988,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1368,
+    "weight": 1465
+  },
+  {
+    "model": "M1",
+    "maker": "BMW",
+    "year": 1981,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 1040,
+    "weight": 1300
+  },
+  {
+    "model": "2002 TURBO",
+    "maker": "BMW",
+    "year": 1973,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1269,
+    "weight": 1080
+  },
+  {
+    "model": "Isetta 300 Export",
+    "maker": "BMW",
+    "year": 1957,
+    "group": "CULT CARS",
+    "car_ordinal": 2412,
+    "weight": 417
+  },
+  {
+    "model": "BT62",
+    "maker": "Brabham",
+    "year": 2019,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3285,
+    "weight": 1066
+  },
+  {
+    "model": "Divo",
+    "maker": "Bugatti",
+    "year": 2019,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3168,
+    "weight": 1960
+  },
+  {
+    "model": "Chiron",
+    "maker": "Bugatti",
+    "year": 2018,
+    "group": "HYPERCARS",
+    "car_ordinal": 2624,
+    "weight": 1995
+  },
+  {
+    "model": "Veyron Super Sport",
+    "maker": "Bugatti",
+    "year": 2011,
+    "group": "HYPERCARS",
+    "car_ordinal": 1328,
+    "weight": 1834
+  },
+  {
+    "model": "EB110 Super Sport",
+    "maker": "Bugatti",
+    "year": 1992,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 1219,
+    "weight": 1418
+  },
+  {
+    "model": "Type 35 C",
+    "maker": "Bugatti",
+    "year": 1926,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2066,
+    "weight": 760
+  },
+  {
+    "model": "Regal GNX",
+    "maker": "Buick",
+    "year": 1987,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 417,
+    "weight": 1608
+  },
+  {
+    "model": "GSX",
+    "maker": "Buick",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1329,
+    "weight": 1757
+  },
+  {
+    "model": "CT5-V Blackwing",
+    "maker": "Cadillac",
+    "year": 2022,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3720,
+    "weight": 1870
+  },
+  {
+    "model": "CT4-V Blackwing",
+    "maker": "Cadillac",
+    "year": 2022,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3719,
+    "weight": 1751
+  },
+  {
+    "model": "ATS-V",
+    "maker": "Cadillac",
+    "year": 2016,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2262,
+    "weight": 1678
+  },
+  {
+    "model": "CTS-V Sedan",
+    "maker": "Cadillac",
+    "year": 2016,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2421,
+    "weight": 1872
+  },
+  {
+    "model": "XTS Limousine",
+    "maker": "Cadillac",
+    "year": 2013,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2128,
+    "weight": 2495
+  },
+  {
+    "model": "Maverick X RS Turbo R",
+    "maker": "Can-Am",
+    "year": 2018,
+    "group": "UTV'S",
+    "car_ordinal": 2871,
+    "weight": 751
+  },
+  {
+    "model": "#4402 Ultra 4 �Trophy Truck�",
+    "maker": "Casey Currie Motorsports",
+    "year": 2019,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3603,
+    "weight": 2200
+  },
+  {
+    "model": "Superlight R500",
+    "maker": "Caterham",
+    "year": 2013,
+    "group": "TRACK TOYS",
+    "car_ordinal": 1652,
+    "weight": 506
+  },
+  {
+    "model": "Corvette Stingray Coupe",
+    "maker": "Chevrolet",
+    "year": 2020,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3369,
+    "weight": 1635
+  },
+  {
+    "model": "Corvette ZR1",
+    "maker": "Chevrolet",
+    "year": 2019,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3118,
+    "weight": 1615
+  },
+  {
+    "model": "Camaro ZL1 1LE",
+    "maker": "Chevrolet",
+    "year": 2018,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3149,
+    "weight": 1740
+  },
+  {
+    "model": "Hot Wheels Copo Camaro",
+    "maker": "Chevrolet",
+    "year": 2018,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3163,
+    "weight": 1474
+  },
+  {
+    "model": "Camaro ZL1",
+    "maker": "Chevrolet",
+    "year": 2017,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2739,
+    "weight": 1761
+  },
+  {
+    "model": "Colorado ZR2",
+    "maker": "Chevrolet",
+    "year": 2017,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2847,
+    "weight": 2147
+  },
+  {
+    "model": "Corvette Z06",
+    "maker": "Chevrolet",
+    "year": 2015,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2177,
+    "weight": 1604
+  },
+  {
+    "model": "Camaro Z/28",
+    "maker": "Chevrolet",
+    "year": 2015,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2183,
+    "weight": 1740
+  },
+  {
+    "model": "Corvette ZR1",
+    "maker": "Chevrolet",
+    "year": 2009,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 1069,
+    "weight": 1520
+  },
+  {
+    "model": "Corvette Z06",
+    "maker": "Chevrolet",
+    "year": 2002,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 314,
+    "weight": 1415
+  },
+  {
+    "model": "Impala Super Sport",
+    "maker": "Chevrolet",
+    "year": 1996,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 1379,
+    "weight": 1831
+  },
+  {
+    "model": "Corvette ZR-1",
+    "maker": "Chevrolet",
+    "year": 1995,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 2006,
+    "weight": 1590
+  },
+  {
+    "model": "Monte Carlo Super Sport",
+    "maker": "Chevrolet",
+    "year": 1988,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 1575,
+    "weight": 1598
+  },
+  {
+    "model": "Camaro Z28",
+    "maker": "Chevrolet",
+    "year": 1979,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1064,
+    "weight": 1615
+  },
+  {
+    "model": "Chevelle Super Sport 454",
+    "maker": "Chevrolet",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 299,
+    "weight": 1723
+  },
+  {
+    "model": "Corvette ZR-1",
+    "maker": "Chevrolet",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 315,
+    "weight": 1530
+  },
+  {
+    "model": "El Camino Super Sport 454",
+    "maker": "Chevrolet",
+    "year": 1970,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 1291,
+    "weight": 1733
+  },
+  {
+    "model": "Camaro Z28",
+    "maker": "Chevrolet",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1330,
+    "weight": 1610
+  },
+  {
+    "model": "Camaro Super Sport Coupe",
+    "maker": "Chevrolet",
+    "year": 1969,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 289,
+    "weight": 1600
+  },
+  {
+    "model": "Nova Super Sport 396",
+    "maker": "Chevrolet",
+    "year": 1969,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1429,
+    "weight": 1574
+  },
+  {
+    "model": "Corvette Stingray 427",
+    "maker": "Chevrolet",
+    "year": 1967,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 312,
+    "weight": 1535
+  },
+  {
+    "model": "Impala Super Sport 409",
+    "maker": "Chevrolet",
+    "year": 1964,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 1300,
+    "weight": 1752
+  },
+  {
+    "model": "Corvette",
+    "maker": "Chevrolet",
+    "year": 1960,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1093,
+    "weight": 1397
+  },
+  {
+    "model": "Bel Air",
+    "maker": "Chevrolet",
+    "year": 1957,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 1459,
+    "weight": 1514
+  },
+  {
+    "model": "150 Utility Sedan",
+    "maker": "Chevrolet",
+    "year": 1955,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2507,
+    "weight": 1955
+  },
+  {
+    "model": "Corvette",
+    "maker": "Chevrolet",
+    "year": 1953,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1564,
+    "weight": 1315
+  },
+  {
+    "model": "Corvette Forza Edition",
+    "maker": "Chevrolet",
+    "year": 1953,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 3559,
+    "weight": 1000
+  },
+  {
+    "model": "UrbanRebel Concept",
+    "maker": "Cupra",
+    "year": 2022,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3748,
+    "weight": 1425
+  },
+  {
+    "model": "Tavascan Concept",
+    "maker": "Cupra",
+    "year": 2022,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3747,
+    "weight": 2268
+  },
+  {
+    "model": "Formentor VZ5",
+    "maker": "Cupra",
+    "year": 2021,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3746,
+    "weight": 1608
+  },
+  {
+    "model": "510",
+    "maker": "Datsun",
+    "year": 1970,
+    "group": "CULT CARS",
+    "car_ordinal": 1104,
+    "weight": 965
+  },
+  {
+    "model": "Ford Super Duty F-250 Lariat �Transformer�",
+    "maker": "Deberti",
+    "year": 2019,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3439,
+    "weight": 3511
+  },
+  {
+    "model": "Toyota Tacoma TRD \"The Performance Truck",
+    "maker": "Deberti",
+    "year": 2019,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3441,
+    "weight": 1458
+  },
+  {
+    "model": "Ford Mustang GT",
+    "maker": "Deberti",
+    "year": 2018,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3085,
+    "weight": 1733
+  },
+  {
+    "model": "Chevrolet Silverado 1500 Drift Truck",
+    "maker": "Deberti",
+    "year": 2018,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3088,
+    "weight": 1588
+  },
+  {
+    "model": "Ford F-150 Prerunner",
+    "maker": "Deberti",
+    "year": 2018,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3109,
+    "weight": 3175
+  },
+  {
+    "model": "Jeep Wrangler Unlimited",
+    "maker": "Deberti",
+    "year": 2018,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3110,
+    "weight": 2109
+  },
+  {
+    "model": "DMC-12",
+    "maker": "DeLorean",
+    "year": 1982,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1270,
+    "weight": 1290
+  },
+  {
+    "model": "Durango SRT",
+    "maker": "Dodge",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2839,
+    "weight": 2499
+  },
+  {
+    "model": "Challenger SRT Demon",
+    "maker": "Dodge",
+    "year": 2018,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2909,
+    "weight": 1927
+  },
+  {
+    "model": "Viper ACR",
+    "maker": "Dodge",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2544,
+    "weight": 1528
+  },
+  {
+    "model": "Challenger SRT Hellcat",
+    "maker": "Dodge",
+    "year": 2015,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2263,
+    "weight": 2013
+  },
+  {
+    "model": "Charger SRT Hellcat",
+    "maker": "Dodge",
+    "year": 2015,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2468,
+    "weight": 2075
+  },
+  {
+    "model": "SRT Viper GTS",
+    "maker": "Dodge",
+    "year": 2013,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 1562,
+    "weight": 1495
+  },
+  {
+    "model": "SRT Viper GTS Anniversary Edition",
+    "maker": "Dodge",
+    "year": 2013,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3749,
+    "weight": 1200
+  },
+  {
+    "model": "Viper SRT10 ACR",
+    "maker": "Dodge",
+    "year": 2008,
+    "group": "TRACK TOYS",
+    "car_ordinal": 1046,
+    "weight": 1546
+  },
+  {
+    "model": "Magnum SRT-8",
+    "maker": "Dodge",
+    "year": 2008,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3169,
+    "weight": 1986
+  },
+  {
+    "model": "Viper GTS ACR",
+    "maker": "Dodge",
+    "year": 1999,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 483,
+    "weight": 1565
+  },
+  {
+    "model": "Challenger R/T",
+    "maker": "Dodge",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 639,
+    "weight": 1724
+  },
+  {
+    "model": "Coronet Super Bee",
+    "maker": "Dodge",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1352,
+    "weight": 1551
+  },
+  {
+    "model": "Charger R/T",
+    "maker": "Dodge",
+    "year": 1969,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 513,
+    "weight": 1665
+  },
+  {
+    "model": "Charger Daytona HEMI",
+    "maker": "Dodge",
+    "year": 1969,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1063,
+    "weight": 1758
+  },
+  {
+    "model": "Charger R/T Forza Edition",
+    "maker": "Dodge",
+    "year": 1969,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3561,
+    "weight": 1540
+  },
+  {
+    "model": "Dart Hemi Super Stock",
+    "maker": "Dodge",
+    "year": 1968,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1332,
+    "weight": 1370
+  },
+  {
+    "model": "D8 GTO",
+    "maker": "Donkervoort",
+    "year": 2013,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2105,
+    "weight": 695
+  },
+  {
+    "model": "Speedster",
+    "maker": "Eagle",
+    "year": 2012,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2908,
+    "weight": 1057
+  },
+  {
+    "model": "Exocet Off-Road",
+    "maker": "Exomotive",
+    "year": 2018,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 3089,
+    "weight": 713
+  },
+  {
+    "model": "Exocet Off-Road Forza Edition",
+    "maker": "Exomotive",
+    "year": 2018,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3562,
+    "weight": 680
+  },
+  {
+    "model": "#125 ABT Cupra XE",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3708,
+    "weight": 1780
+  },
+  {
+    "model": "#22 JBXE",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3709,
+    "weight": 1780
+  },
+  {
+    "model": "#23 Genesys Andretti United",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3710,
+    "weight": 1780
+  },
+  {
+    "model": "#42 XITE Racing Team",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3711,
+    "weight": 1780
+  },
+  {
+    "model": "#44 X44",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3712,
+    "weight": 1780
+  },
+  {
+    "model": "#5 Veloce Racing",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3713,
+    "weight": 1780
+  },
+  {
+    "model": "#55 Acciona | Sainz XE Team",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3714,
+    "weight": 1780
+  },
+  {
+    "model": "#6 Rosberg X Racing",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3715,
+    "weight": 1780
+  },
+  {
+    "model": "#58 McLaren Racing",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3727,
+    "weight": 1780
+  },
+  {
+    "model": "#99 Chip Ganassi Racing GMC Hummer EV",
+    "maker": "Extreme E",
+    "year": 2022,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3733,
+    "weight": 1780
+  },
+  {
+    "model": "SF90 Stradale",
+    "maker": "Ferrari",
+    "year": 2020,
+    "group": "HYPERCARS",
+    "car_ordinal": 3367,
+    "weight": 1671
+  },
+  {
+    "model": "F8 Tributo",
+    "maker": "Ferrari",
+    "year": 2020,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3595,
+    "weight": 1466
+  },
+  {
+    "model": "488 Pista",
+    "maker": "Ferrari",
+    "year": 2019,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3227,
+    "weight": 1385
+  },
+  {
+    "model": "Monza SP2",
+    "maker": "Ferrari",
+    "year": 2019,
+    "group": "SUPER GT",
+    "car_ordinal": 3312,
+    "weight": 1589
+  },
+  {
+    "model": "Portofino",
+    "maker": "Ferrari",
+    "year": 2018,
+    "group": "SUPER GT",
+    "car_ordinal": 3225,
+    "weight": 1664
+  },
+  {
+    "model": "FXX-K Evo",
+    "maker": "Ferrari",
+    "year": 2018,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3311,
+    "weight": 1270
+  },
+  {
+    "model": "812 Superfast",
+    "maker": "Ferrari",
+    "year": 2017,
+    "group": "SUPER GT",
+    "car_ordinal": 2974,
+    "weight": 1630
+  },
+  {
+    "model": "#25 Corse Clienti 488 Challenge",
+    "maker": "Ferrari",
+    "year": 2017,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3112,
+    "weight": 1453
+  },
+  {
+    "model": "GTC4Lusso",
+    "maker": "Ferrari",
+    "year": 2017,
+    "group": "SUPER GT",
+    "car_ordinal": 3122,
+    "weight": 1920
+  },
+  {
+    "model": "J50",
+    "maker": "Ferrari",
+    "year": 2017,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3226,
+    "weight": 1525
+  },
+  {
+    "model": "488 GTB",
+    "maker": "Ferrari",
+    "year": 2015,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2467,
+    "weight": 1475
+  },
+  {
+    "model": "F12tdf",
+    "maker": "Ferrari",
+    "year": 2015,
+    "group": "SUPER GT",
+    "car_ordinal": 2577,
+    "weight": 1520
+  },
+  {
+    "model": "California T",
+    "maker": "Ferrari",
+    "year": 2014,
+    "group": "SUPER GT",
+    "car_ordinal": 2194,
+    "weight": 1730
+  },
+  {
+    "model": "FXX K",
+    "maker": "Ferrari",
+    "year": 2014,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 2371,
+    "weight": 1284
+  },
+  {
+    "model": "LaFerrari",
+    "maker": "Ferrari",
+    "year": 2013,
+    "group": "HYPERCARS",
+    "car_ordinal": 2034,
+    "weight": 1480
+  },
+  {
+    "model": "458 Speciale",
+    "maker": "Ferrari",
+    "year": 2013,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2184,
+    "weight": 1395
+  },
+  {
+    "model": "599XX Evolution",
+    "maker": "Ferrari",
+    "year": 2012,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1599,
+    "weight": 1378
+  },
+  {
+    "model": "599XX",
+    "maker": "Ferrari",
+    "year": 2010,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1171,
+    "weight": 1413
+  },
+  {
+    "model": "599 GTO",
+    "maker": "Ferrari",
+    "year": 2010,
+    "group": "SUPER GT",
+    "car_ordinal": 1319,
+    "weight": 1605
+  },
+  {
+    "model": "458 Italia",
+    "maker": "Ferrari",
+    "year": 2009,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1131,
+    "weight": 1485
+  },
+  {
+    "model": "430 Scuderia",
+    "maker": "Ferrari",
+    "year": 2007,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1022,
+    "weight": 1429
+  },
+  {
+    "model": "FXX",
+    "maker": "Ferrari",
+    "year": 2005,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1006,
+    "weight": 1239
+  },
+  {
+    "model": "360 Challenge Stradale",
+    "maker": "Ferrari",
+    "year": 2003,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 297,
+    "weight": 1290
+  },
+  {
+    "model": "575M Maranello",
+    "maker": "Ferrari",
+    "year": 2002,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 257,
+    "weight": 1730
+  },
+  {
+    "model": "Enzo Ferrari",
+    "maker": "Ferrari",
+    "year": 2002,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 333,
+    "weight": 1480
+  },
+  {
+    "model": "F50 GT",
+    "maker": "Ferrari",
+    "year": 1996,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1020,
+    "weight": 908
+  },
+  {
+    "model": "F50",
+    "maker": "Ferrari",
+    "year": 1995,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 342,
+    "weight": 1350
+  },
+  {
+    "model": "F355 Berlinetta",
+    "maker": "Ferrari",
+    "year": 1994,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 253,
+    "weight": 1450
+  },
+  {
+    "model": "512 TR",
+    "maker": "Ferrari",
+    "year": 1992,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 255,
+    "weight": 1674
+  },
+  {
+    "model": "F40 Competizionne",
+    "maker": "Ferrari",
+    "year": 1989,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1023,
+    "weight": 1050
+  },
+  {
+    "model": "F40",
+    "maker": "Ferrari",
+    "year": 1987,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 340,
+    "weight": 1352
+  },
+  {
+    "model": "288 GTO",
+    "maker": "Ferrari",
+    "year": 1984,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 358,
+    "weight": 1280
+  },
+  {
+    "model": "Dino 246 GT",
+    "maker": "Ferrari",
+    "year": 1969,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 326,
+    "weight": 1080
+  },
+  {
+    "model": "365 GTB/4",
+    "maker": "Ferrari",
+    "year": 1968,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 1318,
+    "weight": 1633
+  },
+  {
+    "model": "#24 Ferrari Spa 330 P4",
+    "maker": "Ferrari",
+    "year": 1967,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2793,
+    "weight": 1030
+  },
+  {
+    "model": "250 GTO",
+    "maker": "Ferrari",
+    "year": 1962,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 249,
+    "weight": 1043
+  },
+  {
+    "model": "250 GT Berlinetta Lusso",
+    "maker": "Ferrari",
+    "year": 1962,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 1578,
+    "weight": 1020
+  },
+  {
+    "model": "250 Testa Rossa",
+    "maker": "Ferrari",
+    "year": 1957,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1154,
+    "weight": 920
+  },
+  {
+    "model": "250 California",
+    "maker": "Ferrari",
+    "year": 1957,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 1271,
+    "weight": 1050
+  },
+  {
+    "model": "Bronco",
+    "maker": "Ford",
+    "year": 2021,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3489,
+    "weight": 2182
+  },
+  {
+    "model": "F-150 Lightning Platinum",
+    "maker": "Ford",
+    "year": 2021,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3692,
+    "weight": 3207
+  },
+  {
+    "model": "Mustang Mache E 1400",
+    "maker": "Ford",
+    "year": 2021,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3598,
+    "weight": 2250
+  },
+  {
+    "model": "Mustang Shelby GT500",
+    "maker": "Ford",
+    "year": 2020,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3277,
+    "weight": 1892
+  },
+  {
+    "model": "#2069 Ford Performance Bronco R",
+    "maker": "Ford",
+    "year": 2020,
+    "group": "OFFROAD",
+    "car_ordinal": 3404,
+    "weight": 2948
+  },
+  {
+    "model": "Super Duty F-450 DRW PLATINUM",
+    "maker": "Ford",
+    "year": 2020,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3476,
+    "weight": 3895
+  },
+  {
+    "model": "#2069 Ford Performance Bronco R \"Welcome Pack",
+    "maker": "Ford",
+    "year": 2020,
+    "group": "OFFROAD",
+    "car_ordinal": 3684,
+    "weight": 2030
+  },
+  {
+    "model": "Ranger Raptor",
+    "maker": "Ford",
+    "year": 2019,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3174,
+    "weight": 2332
+  },
+  {
+    "model": "Mustang GT",
+    "maker": "Ford",
+    "year": 2018,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3046,
+    "weight": 1681
+  },
+  {
+    "model": "#25 Mustang RTR",
+    "maker": "Ford",
+    "year": 2018,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3093,
+    "weight": 1406
+  },
+  {
+    "model": "Mustang RTR Spec 5",
+    "maker": "Ford",
+    "year": 2018,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 3108,
+    "weight": 1736
+  },
+  {
+    "model": "#88 Mustang RTR",
+    "maker": "Ford",
+    "year": 2018,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3151,
+    "weight": 1406
+  },
+  {
+    "model": "Focus RS",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2357,
+    "weight": 1563
+  },
+  {
+    "model": "GT",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2363,
+    "weight": 1521
+  },
+  {
+    "model": "F-150 Raptor",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2397,
+    "weight": 2472
+  },
+  {
+    "model": "#14 Rahal Letterman Lanigan Racing GRC Fiesta",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2937,
+    "weight": 1246
+  },
+  {
+    "model": "M-Sport Fiesta RS",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3051,
+    "weight": 1270
+  },
+  {
+    "model": "#25 'Brocky' Ultra4 Bronco RTR",
+    "maker": "Ford",
+    "year": 2017,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3128,
+    "weight": 2041
+  },
+  {
+    "model": "Shelby GT350R",
+    "maker": "Ford",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2400,
+    "weight": 1660
+  },
+  {
+    "model": "Mustang GT",
+    "maker": "Ford",
+    "year": 2015,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2155,
+    "weight": 0
+  },
+  {
+    "model": "Falcon GT F 351",
+    "maker": "Ford",
+    "year": 2015,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2580,
+    "weight": 1828
+  },
+  {
+    "model": "Fiesta ST",
+    "maker": "Ford",
+    "year": 2014,
+    "group": "HOT HATCH",
+    "car_ordinal": 2011,
+    "weight": 1234
+  },
+  {
+    "model": "Ranger T6 Rally Raid",
+    "maker": "Ford",
+    "year": 2014,
+    "group": "OFFROAD",
+    "car_ordinal": 2145,
+    "weight": 1975
+  },
+  {
+    "model": "#11 Rockstar F-150 Trophy Truck",
+    "maker": "Ford",
+    "year": 2014,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2517,
+    "weight": 2835
+  },
+  {
+    "model": "FPV Limited Edition Pursuit Ute",
+    "maker": "Ford",
+    "year": 2014,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 2551,
+    "weight": 1790
+  },
+  {
+    "model": "Shelby GT500",
+    "maker": "Ford",
+    "year": 2013,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 1654,
+    "weight": 1768
+  },
+  {
+    "model": "F-150 SVT Raptor",
+    "maker": "Ford",
+    "year": 2011,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 1460,
+    "weight": 2724
+  },
+  {
+    "model": "Transit SuperSportVan",
+    "maker": "Ford",
+    "year": 2011,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 1477,
+    "weight": 2038
+  },
+  {
+    "model": "Crown Victoria Police Interceptor",
+    "maker": "Ford",
+    "year": 2010,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 2649,
+    "weight": 1840
+  },
+  {
+    "model": "Focus RS",
+    "maker": "Ford",
+    "year": 2009,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 1086,
+    "weight": 1468
+  },
+  {
+    "model": "GT",
+    "maker": "Ford",
+    "year": 2005,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 348,
+    "weight": 1538
+  },
+  {
+    "model": "Focus RS",
+    "maker": "Ford",
+    "year": 2003,
+    "group": "HOT HATCH",
+    "car_ordinal": 2019,
+    "weight": 1280
+  },
+  {
+    "model": "F-150 SVT Lightning",
+    "maker": "Ford",
+    "year": 2003,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3190,
+    "weight": 2118
+  },
+  {
+    "model": "#4 Ford Focus RS",
+    "maker": "Ford",
+    "year": 2001,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3670,
+    "weight": 1271
+  },
+  {
+    "model": "SVT Cobra R",
+    "maker": "Ford",
+    "year": 2000,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 405,
+    "weight": 1628
+  },
+  {
+    "model": "Racing Puma",
+    "maker": "Ford",
+    "year": 1999,
+    "group": "RETRO RALLY",
+    "car_ordinal": 3228,
+    "weight": 1174
+  },
+  {
+    "model": "Racing Puma Forza Edition",
+    "maker": "Ford",
+    "year": 1999,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3564,
+    "weight": 995
+  },
+  {
+    "model": "Supervan 3 Donut Media Edition",
+    "maker": "Ford",
+    "year": 1994,
+    "group": "TRACK TOYS",
+    "car_ordinal": 9007,
+    "weight": 890
+  },
+  {
+    "model": "Supervan 3",
+    "maker": "Ford",
+    "year": 1994,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3170,
+    "weight": 890
+  },
+  {
+    "model": "SVT Cobra R",
+    "maker": "Ford",
+    "year": 1993,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 1041,
+    "weight": 1417
+  },
+  {
+    "model": "Escort RS Cosworth",
+    "maker": "Ford",
+    "year": 1992,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1272,
+    "weight": 1275
+  },
+  {
+    "model": "Sierra Cosworth RS500",
+    "maker": "Ford",
+    "year": 1987,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1293,
+    "weight": 1240
+  },
+  {
+    "model": "F-150 XLT Lariat",
+    "maker": "Ford",
+    "year": 1986,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3597,
+    "weight": 1726
+  },
+  {
+    "model": "Escort RS Turbo",
+    "maker": "Ford",
+    "year": 1986,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2981,
+    "weight": 977
+  },
+  {
+    "model": "Mustang SVO",
+    "maker": "Ford",
+    "year": 1986,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 3181,
+    "weight": 1373
+  },
+  {
+    "model": "RS200 Evolution",
+    "maker": "Ford",
+    "year": 1985,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 1108,
+    "weight": 1118
+  },
+  {
+    "model": "Fiesta XR2",
+    "maker": "Ford",
+    "year": 1981,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2158,
+    "weight": 840
+  },
+  {
+    "model": "Escort RS1800",
+    "maker": "Ford",
+    "year": 1977,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 1302,
+    "weight": 901
+  },
+  {
+    "model": "#5 Escort RS1800 MkII",
+    "maker": "Ford",
+    "year": 1977,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 3184,
+    "weight": 980
+  },
+  {
+    "model": "Bronco",
+    "maker": "Ford",
+    "year": 1975,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2187,
+    "weight": 1608
+  },
+  {
+    "model": "XB Falcon GT",
+    "maker": "Ford",
+    "year": 1973,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1278,
+    "weight": 1382
+  },
+  {
+    "model": "Capri RS3100",
+    "maker": "Ford",
+    "year": 1973,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1529,
+    "weight": 1050
+  },
+  {
+    "model": "Escort RS1600",
+    "maker": "Ford",
+    "year": 1973,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 1580,
+    "weight": 870
+  },
+  {
+    "model": "Falcon XA GT-HO",
+    "maker": "Ford",
+    "year": 1972,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 2585,
+    "weight": 1570
+  },
+  {
+    "model": "Mustang Mach 1",
+    "maker": "Ford",
+    "year": 1971,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1320,
+    "weight": 1683
+  },
+  {
+    "model": "GT70",
+    "maker": "Ford",
+    "year": 1970,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 3167,
+    "weight": 762
+  },
+  {
+    "model": "Mustang Boss 302",
+    "maker": "Ford",
+    "year": 1969,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1668,
+    "weight": 1474
+  },
+  {
+    "model": "Mustang GT 2+2 Fastback",
+    "maker": "Ford",
+    "year": 1968,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 2614,
+    "weight": 1609
+  },
+  {
+    "model": "Racing Escort MK1",
+    "maker": "Ford",
+    "year": 1967,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 3183,
+    "weight": 960
+  },
+  {
+    "model": "Lotus Cortina",
+    "maker": "Ford",
+    "year": 1966,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1486,
+    "weight": 934
+  },
+  {
+    "model": "#2 GT40 Mk II",
+    "maker": "Ford",
+    "year": 1966,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2792,
+    "weight": 1217
+  },
+  {
+    "model": "Mustang GT Coupe",
+    "maker": "Ford",
+    "year": 1965,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1355,
+    "weight": 1162
+  },
+  {
+    "model": "Transit",
+    "maker": "Ford",
+    "year": 1965,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3126,
+    "weight": 1600
+  },
+  {
+    "model": "GT40 Mk I",
+    "maker": "Ford",
+    "year": 1964,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2980,
+    "weight": 1008
+  },
+  {
+    "model": "Anglia 105E",
+    "maker": "Ford",
+    "year": 1959,
+    "group": "CULT CARS",
+    "car_ordinal": 2979,
+    "weight": 760
+  },
+  {
+    "model": "F-100",
+    "maker": "Ford",
+    "year": 1956,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 1581,
+    "weight": 1508
+  },
+  {
+    "model": "Super Deluxe Station Wagon",
+    "maker": "Ford",
+    "year": 1946,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2504,
+    "weight": 1583
+  },
+  {
+    "model": "De Luxe Coupe",
+    "maker": "Ford",
+    "year": 1940,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 1530,
+    "weight": 1347
+  },
+  {
+    "model": "De Luxe Five-Window Coupe",
+    "maker": "Ford",
+    "year": 1932,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2372,
+    "weight": 1088
+  },
+  {
+    "model": "De Luxe Five-Window Coupe Forza Edition",
+    "maker": "Ford",
+    "year": 1932,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 9999,
+    "weight": 0
+  },
+  {
+    "model": "#64 Forsberg Racing Nissan Z",
+    "maker": "Formula Drift",
+    "year": 2023,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3744,
+    "weight": 1406
+  },
+  {
+    "model": "#151 Toyota GR Supra",
+    "maker": "Formula Drift",
+    "year": 2020,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3523,
+    "weight": 1432
+  },
+  {
+    "model": "#91 BMW M2",
+    "maker": "Formula Drift",
+    "year": 2020,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3551,
+    "weight": 1292
+  },
+  {
+    "model": "#411 Toyota Corolla Hatchback",
+    "maker": "Formula Drift",
+    "year": 2019,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3524,
+    "weight": 1432
+  },
+  {
+    "model": "#64 Nissan 370Z",
+    "maker": "Formula Drift",
+    "year": 2018,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3247,
+    "weight": 1300
+  },
+  {
+    "model": "#357 Chevrolet Corvette",
+    "maker": "Formula Drift",
+    "year": 2017,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3446,
+    "weight": 1333
+  },
+  {
+    "model": "#530 HSV Maloo GEN-F",
+    "maker": "Formula Drift",
+    "year": 2016,
+    "group": "DRIFT CARS",
+    "car_ordinal": 2997,
+    "weight": 1315
+  },
+  {
+    "model": "#13 Ford Mustang",
+    "maker": "Formula Drift",
+    "year": 2015,
+    "group": "DRIFT CARS",
+    "car_ordinal": 2996,
+    "weight": 1406
+  },
+  {
+    "model": "#777 Chevrolet Corvette",
+    "maker": "Formula Drift",
+    "year": 2013,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3232,
+    "weight": 1361
+  },
+  {
+    "model": "#99 Mazda RX-8",
+    "maker": "Formula Drift",
+    "year": 2009,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3400,
+    "weight": 1281
+  },
+  {
+    "model": "#117 599 GTB Fiorano",
+    "maker": "Formula Drift",
+    "year": 2007,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3249,
+    "weight": 1451
+  },
+  {
+    "model": "#43 Dodge Viper SRT10",
+    "maker": "Formula Drift",
+    "year": 2006,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3003,
+    "weight": 1315
+  },
+  {
+    "model": "#777 Nissan 240SX",
+    "maker": "Formula Drift",
+    "year": 1997,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3000,
+    "weight": 1406
+  },
+  {
+    "model": "#51 Donut Media Nissan 240SX",
+    "maker": "Formula Drift",
+    "year": 1996,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3741,
+    "weight": 1295
+  },
+  {
+    "model": "#34 Toyota Supra MKIV",
+    "maker": "Formula Drift",
+    "year": 1995,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3411,
+    "weight": 1292
+  },
+  {
+    "model": "#98 BMW 325i",
+    "maker": "Formula Drift",
+    "year": 1989,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3037,
+    "weight": 1270
+  },
+  {
+    "model": "Nissan �SafariZ� 370Z Rally Tribute",
+    "maker": "Forsberg Racing",
+    "year": 2014,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3531,
+    "weight": 1424
+  },
+  {
+    "model": "Toyota Gumout 2JZ CAMRY Stock Car",
+    "maker": "Forsberg Racing",
+    "year": 2010,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3528,
+    "weight": 1502
+  },
+  {
+    "model": "Nissan \"Gold Leader\" Datsun 280Z",
+    "maker": "Forsberg Racing",
+    "year": 1975,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 3529,
+    "weight": 1114
+  },
+  {
+    "model": "F9",
+    "maker": "Funco Motorsports",
+    "year": 2018,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 2935,
+    "weight": 1270
+  },
+  {
+    "model": "HUMMER EV Pickup",
+    "maker": "GMC",
+    "year": 2022,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3722,
+    "weight": 4111
+  },
+  {
+    "model": "Typhoon",
+    "maker": "GMC",
+    "year": 1992,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 1394,
+    "weight": 1724
+  },
+  {
+    "model": "Syclone",
+    "maker": "GMC",
+    "year": 1991,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 1294,
+    "weight": 1639
+  },
+  {
+    "model": "Vandura G-1500",
+    "maker": "GMC",
+    "year": 1983,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 1531,
+    "weight": 2290
+  },
+  {
+    "model": "Jimmy",
+    "maker": "GMC",
+    "year": 1970,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2613,
+    "weight": 1818
+  },
+  {
+    "model": "VDK Commodore Group A",
+    "maker": "HDT",
+    "year": 1985,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 2584,
+    "weight": 1340
+  },
+  {
+    "model": "Venom F5",
+    "maker": "Hennessey",
+    "year": 2021,
+    "group": "HYPERCARS",
+    "car_ordinal": 3600,
+    "weight": 1385
+  },
+  {
+    "model": "Camaro Exorcist",
+    "maker": "Hennessey",
+    "year": 2019,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3284,
+    "weight": 1750
+  },
+  {
+    "model": "VelociRaptor 6x6",
+    "maker": "Hennessey",
+    "year": 2019,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3189,
+    "weight": 3038
+  },
+  {
+    "model": "Venom GT",
+    "maker": "Hennessey",
+    "year": 2012,
+    "group": "HYPERCARS",
+    "car_ordinal": 1532,
+    "weight": 1218
+  },
+  {
+    "model": "Torana A9X",
+    "maker": "Holden",
+    "year": 1977,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1533,
+    "weight": 1143
+  },
+  {
+    "model": "Sandman HQ panel van",
+    "maker": "Holden",
+    "year": 1974,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 2510,
+    "weight": 1488
+  },
+  {
+    "model": "HQ Monaro GTS 350",
+    "maker": "Holden",
+    "year": 1973,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 2417,
+    "weight": 1429
+  },
+  {
+    "model": "Civic Type R",
+    "maker": "Honda",
+    "year": 2018,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2870,
+    "weight": 1414
+  },
+  {
+    "model": "Civic Type R",
+    "maker": "Honda",
+    "year": 2016,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2163,
+    "weight": 1382
+  },
+  {
+    "model": "Civic Coupe",
+    "maker": "Honda",
+    "year": 2016,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3069,
+    "weight": 1246
+  },
+  {
+    "model": "Ridgeline Baja Trophy Truck",
+    "maker": "Honda",
+    "year": 2015,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2745,
+    "weight": 2132
+  },
+  {
+    "model": "S2000 CR",
+    "maker": "Honda",
+    "year": 2009,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2005,
+    "weight": 1276
+  },
+  {
+    "model": "Civic Type R",
+    "maker": "Honda",
+    "year": 2007,
+    "group": "HOT HATCH",
+    "car_ordinal": 625,
+    "weight": 1345
+  },
+  {
+    "model": "NSX-R",
+    "maker": "Honda",
+    "year": 2005,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 411,
+    "weight": 1270
+  },
+  {
+    "model": "NSX-R GT",
+    "maker": "Honda",
+    "year": 2005,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 569,
+    "weight": 1270
+  },
+  {
+    "model": "Civic Type R",
+    "maker": "Honda",
+    "year": 2004,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 302,
+    "weight": 1190
+  },
+  {
+    "model": "S2000",
+    "maker": "Honda",
+    "year": 2003,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 427,
+    "weight": 1250
+  },
+  {
+    "model": "Civic Type R",
+    "maker": "Honda",
+    "year": 1997,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 1273,
+    "weight": 1090
+  },
+  {
+    "model": "Prelude Si",
+    "maker": "Honda",
+    "year": 1994,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2121,
+    "weight": 1302
+  },
+  {
+    "model": "NSX-R",
+    "maker": "Honda",
+    "year": 1992,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 412,
+    "weight": 1230
+  },
+  {
+    "model": "CR-X SiR",
+    "maker": "Honda",
+    "year": 1991,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 320,
+    "weight": 980
+  },
+  {
+    "model": "Civic CRX Mugen",
+    "maker": "Honda",
+    "year": 1984,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2119,
+    "weight": 825
+  },
+  {
+    "model": "Civic RS",
+    "maker": "Honda",
+    "year": 1974,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 1568,
+    "weight": 755
+  },
+  {
+    "model": "GYMKHANA 9 Ford Focus RS RX",
+    "maker": "Hoonigan",
+    "year": 2016,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2648,
+    "weight": 1130
+  },
+  {
+    "model": "GYMKHANA 10 Ford Focus RS RX",
+    "maker": "Hoonigan",
+    "year": 2016,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3115,
+    "weight": 1130
+  },
+  {
+    "model": "Ford Escort RS Cosworth WRC �Cossie V2�",
+    "maker": "Hoonigan",
+    "year": 1994,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3370,
+    "weight": 1280
+  },
+  {
+    "model": "Mazda RX-7 Twerkstallion",
+    "maker": "Hoonigan",
+    "year": 1992,
+    "group": "DRIFT CARS",
+    "car_ordinal": 2732,
+    "weight": 1300
+  },
+  {
+    "model": "Rauh-Welt Begriff Porsche 911 Turbo",
+    "maker": "Hoonigan",
+    "year": 1991,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 2736,
+    "weight": 1350
+  },
+  {
+    "model": "GYMKHANA 10 Ford Escort Cosworth Group A",
+    "maker": "Hoonigan",
+    "year": 1991,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2984,
+    "weight": 1220
+  },
+  {
+    "model": "Ford RS200 Evolution",
+    "maker": "Hoonigan",
+    "year": 1986,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3119,
+    "weight": 1131
+  },
+  {
+    "model": "Ford Escort RS1800",
+    "maker": "Hoonigan",
+    "year": 1978,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2730,
+    "weight": 999
+  },
+  {
+    "model": "GYMKHANA 10 Ford F-150 \"Hoonitruck",
+    "maker": "Hoonigan",
+    "year": 1977,
+    "group": "DRIFT CARS",
+    "car_ordinal": 2982,
+    "weight": 1456
+  },
+  {
+    "model": "Volkswagen Baja Beetle Class 5/1600 �Scumbug�",
+    "maker": "Hoonigan",
+    "year": 1973,
+    "group": "BUGGIES",
+    "car_ordinal": 3553,
+    "weight": 993
+  },
+  {
+    "model": "Chevrolet Napalm Nova",
+    "maker": "Hoonigan",
+    "year": 1972,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 2729,
+    "weight": 1618
+  },
+  {
+    "model": "Ford \"Hoonicorn\" Mustang",
+    "maker": "Hoonigan",
+    "year": 1965,
+    "group": "DRIFT CARS",
+    "car_ordinal": 2734,
+    "weight": 1360
+  },
+  {
+    "model": "GYMKHANA 10 Ford Hoonicorn Mustang",
+    "maker": "Hoonigan",
+    "year": 1965,
+    "group": "DRIFT CARS",
+    "car_ordinal": 3006,
+    "weight": 1360
+  },
+  {
+    "model": "Chevrolet Bel Air",
+    "maker": "Hoonigan",
+    "year": 1955,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2728,
+    "weight": 1472
+  },
+  {
+    "model": "2JetZ",
+    "maker": "Hot Wheels",
+    "year": 2018,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 3405,
+    "weight": 789
+  },
+  {
+    "model": "Baja Bone Shaker",
+    "maker": "Hot Wheels",
+    "year": 2013,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3702,
+    "weight": 2000
+  },
+  {
+    "model": "Rip Rod",
+    "maker": "Hot Wheels",
+    "year": 2012,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 2751,
+    "weight": 680
+  },
+  {
+    "model": "Bad to the Blade",
+    "maker": "Hot Wheels",
+    "year": 2012,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3704,
+    "weight": 725
+  },
+  {
+    "model": "Bone Shaker",
+    "maker": "Hot Wheels",
+    "year": 2011,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2575,
+    "weight": 1000
+  },
+  {
+    "model": "Ford Mustang",
+    "maker": "Hot Wheels",
+    "year": 2005,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2576,
+    "weight": 1497
+  },
+  {
+    "model": "Deora II",
+    "maker": "Hot Wheels",
+    "year": 2000,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 3703,
+    "weight": 2000
+  },
+  {
+    "model": "Pontiac Firebird Trans Am Custom",
+    "maker": "Hot Wheels",
+    "year": 1970,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 3706,
+    "weight": 1418
+  },
+  {
+    "model": "Twin Mill",
+    "maker": "Hot Wheels",
+    "year": 1969,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2750,
+    "weight": 2130
+  },
+  {
+    "model": "Nash Metropolitan Custom",
+    "maker": "Hot Wheels",
+    "year": 1957,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 3407,
+    "weight": 1021
+  },
+  {
+    "model": "Ford F-5 Dually Custom Hot Rod",
+    "maker": "Hot Wheels",
+    "year": 1949,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 3252,
+    "weight": 2114
+  },
+  {
+    "model": "GEN-F GTS",
+    "maker": "HSV",
+    "year": 2014,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 2131,
+    "weight": 1881
+  },
+  {
+    "model": "Limited Edition GEN-F GTS Maloo",
+    "maker": "HSV",
+    "year": 2014,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 2422,
+    "weight": 1830
+  },
+  {
+    "model": "H1 Alpha",
+    "maker": "HUMMER",
+    "year": 2006,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 1345,
+    "weight": 3680
+  },
+  {
+    "model": "Veloster N",
+    "maker": "Hyundai",
+    "year": 2019,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2872,
+    "weight": 1409
+  },
+  {
+    "model": "Q60 Concept",
+    "maker": "Infiniti",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2437,
+    "weight": 1656
+  },
+  {
+    "model": "Scout 800A",
+    "maker": "International",
+    "year": 1970,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2558,
+    "weight": 1640
+  },
+  {
+    "model": "ZeroUno",
+    "maker": "ItalDesign",
+    "year": 2018,
+    "group": "HYPERCARS",
+    "car_ordinal": 3194,
+    "weight": 1525
+  },
+  {
+    "model": "I-PACE",
+    "maker": "Jaguar",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3164,
+    "weight": 2208
+  },
+  {
+    "model": "F-PACE S",
+    "maker": "Jaguar",
+    "year": 2017,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2571,
+    "weight": 1821
+  },
+  {
+    "model": "F-TYPE Project 7",
+    "maker": "Jaguar",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2492,
+    "weight": 1620
+  },
+  {
+    "model": "F-Type R Coup�",
+    "maker": "Jaguar",
+    "year": 2015,
+    "group": "GT CARS",
+    "car_ordinal": 2162,
+    "weight": 1650
+  },
+  {
+    "model": "XFR-S",
+    "maker": "Jaguar",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2185,
+    "weight": 1987
+  },
+  {
+    "model": "XKR-S",
+    "maker": "Jaguar",
+    "year": 2015,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2235,
+    "weight": 1804
+  },
+  {
+    "model": "XE-S",
+    "maker": "Jaguar",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2570,
+    "weight": 1718
+  },
+  {
+    "model": "XKR-S",
+    "maker": "Jaguar",
+    "year": 2012,
+    "group": "GT CARS",
+    "car_ordinal": 1496,
+    "weight": 1753
+  },
+  {
+    "model": "C-X75",
+    "maker": "Jaguar",
+    "year": 2010,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3055,
+    "weight": 1701
+  },
+  {
+    "model": "XJ220",
+    "maker": "Jaguar",
+    "year": 1993,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 489,
+    "weight": 1470
+  },
+  {
+    "model": "XJ220S TWR",
+    "maker": "Jaguar",
+    "year": 1993,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 3293,
+    "weight": 1079
+  },
+  {
+    "model": "Sport XJR-15",
+    "maker": "Jaguar",
+    "year": 1991,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 3287,
+    "weight": 1050
+  },
+  {
+    "model": "XJ13",
+    "maker": "Jaguar",
+    "year": 1966,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 3415,
+    "weight": 1160
+  },
+  {
+    "model": "Lightweight E-Type",
+    "maker": "Jaguar",
+    "year": 1964,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2992,
+    "weight": 1040
+  },
+  {
+    "model": "E-type",
+    "maker": "Jaguar",
+    "year": 1961,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 336,
+    "weight": 1315
+  },
+  {
+    "model": "Mk II 3.8",
+    "maker": "Jaguar",
+    "year": 1959,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2559,
+    "weight": 1524
+  },
+  {
+    "model": "D-Type",
+    "maker": "Jaguar",
+    "year": 1956,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1301,
+    "weight": 953
+  },
+  {
+    "model": "Gladiator Rubicon",
+    "maker": "Jeep",
+    "year": 2020,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3255,
+    "weight": 2301
+  },
+  {
+    "model": "Grand Cherokee Trackhawk",
+    "maker": "Jeep",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2841,
+    "weight": 2427
+  },
+  {
+    "model": "Trailcat",
+    "maker": "Jeep",
+    "year": 2016,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2742,
+    "weight": 2087
+  },
+  {
+    "model": "Grand Cherokee SRT",
+    "maker": "Jeep",
+    "year": 2014,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2108,
+    "weight": 2336
+  },
+  {
+    "model": "Wrangler Rubicon",
+    "maker": "Jeep",
+    "year": 2012,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 1522,
+    "weight": 1874
+  },
+  {
+    "model": "CJ5 Renegade",
+    "maker": "Jeep",
+    "year": 1976,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2511,
+    "weight": 1030
+  },
+  {
+    "model": "#1379 Hammerhead Class 1",
+    "maker": "Jimco",
+    "year": 2020,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 3604,
+    "weight": 1800
+  },
+  {
+    "model": "#240 Fastball Racing Spec Trophy Truck",
+    "maker": "Jimco",
+    "year": 2019,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3605,
+    "weight": 2313
+  },
+  {
+    "model": "Jesko",
+    "maker": "Koenigsegg",
+    "year": 2020,
+    "group": "HYPERCARS",
+    "car_ordinal": 3315,
+    "weight": 1430
+  },
+  {
+    "model": "Agera RS",
+    "maker": "Koenigsegg",
+    "year": 2017,
+    "group": "HYPERCARS",
+    "car_ordinal": 2910,
+    "weight": 1395
+  },
+  {
+    "model": "Regera",
+    "maker": "Koenigsegg",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 2526,
+    "weight": 1628
+  },
+  {
+    "model": "One:1",
+    "maker": "Koenigsegg",
+    "year": 2015,
+    "group": "HYPERCARS",
+    "car_ordinal": 2188,
+    "weight": 1360
+  },
+  {
+    "model": "Agera",
+    "maker": "Koenigsegg",
+    "year": 2011,
+    "group": "HYPERCARS",
+    "car_ordinal": 1397,
+    "weight": 1435
+  },
+  {
+    "model": "CCGT",
+    "maker": "Koenigsegg",
+    "year": 2008,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1007,
+    "weight": 1100
+  },
+  {
+    "model": "CC8S",
+    "maker": "Koenigsegg",
+    "year": 2002,
+    "group": "HYPERCARS",
+    "car_ordinal": 294,
+    "weight": 1275
+  },
+  {
+    "model": "X-Bow GT4",
+    "maker": "KTM",
+    "year": 2018,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3035,
+    "weight": 1067
+  },
+  {
+    "model": "X-Bow R",
+    "maker": "KTM",
+    "year": 2013,
+    "group": "TRACK TOYS",
+    "car_ordinal": 1653,
+    "weight": 810
+  },
+  {
+    "model": "Hurac�n STO",
+    "maker": "Lamborghini",
+    "year": 2020,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3672,
+    "weight": 1469
+  },
+  {
+    "model": "Hurac�n EVO",
+    "maker": "Lamborghini",
+    "year": 2020,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3371,
+    "weight": 1552
+  },
+  {
+    "model": "Si�n Roadster",
+    "maker": "Lamborghini",
+    "year": 2020,
+    "group": "HYPERCARS",
+    "car_ordinal": 3608,
+    "weight": 1736
+  },
+  {
+    "model": "Urus",
+    "maker": "Lamborghini",
+    "year": 2019,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3120,
+    "weight": 2200
+  },
+  {
+    "model": "Hurac�n Performante",
+    "maker": "Lamborghini",
+    "year": 2018,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3217,
+    "weight": 1512
+  },
+  {
+    "model": "Aventador SVJ",
+    "maker": "Lamborghini",
+    "year": 2018,
+    "group": "HYPERCARS",
+    "car_ordinal": 3289,
+    "weight": 1636
+  },
+  {
+    "model": "Aventador Superveloce",
+    "maker": "Lamborghini",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 2479,
+    "weight": 1681
+  },
+  {
+    "model": "Centenario LP 770-4",
+    "maker": "Lamborghini",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 2616,
+    "weight": 1675
+  },
+  {
+    "model": "Hurac�n LP 610-4",
+    "maker": "Lamborghini",
+    "year": 2014,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2164,
+    "weight": 1552
+  },
+  {
+    "model": "Veneno",
+    "maker": "Lamborghini",
+    "year": 2013,
+    "group": "HYPERCARS",
+    "car_ordinal": 2042,
+    "weight": 1646
+  },
+  {
+    "model": "Aventador LP700-4",
+    "maker": "Lamborghini",
+    "year": 2012,
+    "group": "HYPERCARS",
+    "car_ordinal": 1398,
+    "weight": 1731
+  },
+  {
+    "model": "Aventador J",
+    "maker": "Lamborghini",
+    "year": 2012,
+    "group": "HYPERCARS",
+    "car_ordinal": 1583,
+    "weight": 1731
+  },
+  {
+    "model": "Gallardo LP 570-4 Spyder Performante",
+    "maker": "Lamborghini",
+    "year": 2012,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1601,
+    "weight": 1641
+  },
+  {
+    "model": "Gallardo LP 570-4 Superleggera",
+    "maker": "Lamborghini",
+    "year": 2011,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1322,
+    "weight": 1496
+  },
+  {
+    "model": "Sesto Elemento",
+    "maker": "Lamborghini",
+    "year": 2011,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1392,
+    "weight": 999
+  },
+  {
+    "model": "Sesto Elemento Forza Edition",
+    "maker": "Lamborghini",
+    "year": 2011,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 2941,
+    "weight": 925
+  },
+  {
+    "model": "Murci�lago LP 670-4 SV",
+    "maker": "Lamborghini",
+    "year": 2010,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1173,
+    "weight": 1721
+  },
+  {
+    "model": "Revent�n",
+    "maker": "Lamborghini",
+    "year": 2008,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1125,
+    "weight": 1821
+  },
+  {
+    "model": "Diablo GTR",
+    "maker": "Lamborghini",
+    "year": 1999,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 324,
+    "weight": 1400
+  },
+  {
+    "model": "Diablo SV",
+    "maker": "Lamborghini",
+    "year": 1997,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 325,
+    "weight": 1576
+  },
+  {
+    "model": "Countach LP5000 QV",
+    "maker": "Lamborghini",
+    "year": 1988,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 316,
+    "weight": 1490
+  },
+  {
+    "model": "LM 002",
+    "maker": "Lamborghini",
+    "year": 1986,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2176,
+    "weight": 2700
+  },
+  {
+    "model": "Espada 400 GT",
+    "maker": "Lamborghini",
+    "year": 1973,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 3191,
+    "weight": 1635
+  },
+  {
+    "model": "Miura P400",
+    "maker": "Lamborghini",
+    "year": 1967,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 637,
+    "weight": 1245
+  },
+  {
+    "model": "Defender 110 X",
+    "maker": "Land Rover",
+    "year": 2020,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3414,
+    "weight": 2386
+  },
+  {
+    "model": "Range Rover Velar First Edition",
+    "maker": "Land Rover",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3136,
+    "weight": 2121
+  },
+  {
+    "model": "Range Rover Sport SVR",
+    "maker": "Land Rover",
+    "year": 2015,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2494,
+    "weight": 2335
+  },
+  {
+    "model": "Defender 90",
+    "maker": "Land Rover",
+    "year": 1997,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2135,
+    "weight": 1770
+  },
+  {
+    "model": "Range Rover",
+    "maker": "Land Rover",
+    "year": 1973,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2985,
+    "weight": 1724
+  },
+  {
+    "model": "Series III",
+    "maker": "Land Rover",
+    "year": 1972,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2560,
+    "weight": 1405
+  },
+  {
+    "model": "LC 500",
+    "maker": "Lexus",
+    "year": 2021,
+    "group": "GT CARS",
+    "car_ordinal": 3520,
+    "weight": 1935
+  },
+  {
+    "model": "RC F Track Edition",
+    "maker": "Lexus",
+    "year": 2020,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3546,
+    "weight": 1715
+  },
+  {
+    "model": "RC F",
+    "maker": "Lexus",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2175,
+    "weight": 1795
+  },
+  {
+    "model": "LFA",
+    "maker": "Lexus",
+    "year": 2010,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1260,
+    "weight": 1480
+  },
+  {
+    "model": "SC300",
+    "maker": "Lexus",
+    "year": 1997,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1351,
+    "weight": 1615
+  },
+  {
+    "model": "Rally Fighter",
+    "maker": "Local Motors",
+    "year": 2014,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2146,
+    "weight": 1724
+  },
+  {
+    "model": "#6 Penske Sunoco T70 MkIIIB",
+    "maker": "Lola",
+    "year": 1969,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2423,
+    "weight": 840
+  },
+  {
+    "model": "Emira",
+    "maker": "Lotus",
+    "year": 2023,
+    "group": "",
+    "car_ordinal": 3716,
+    "weight": 0
+  },
+  {
+    "model": "Evija",
+    "maker": "Lotus",
+    "year": 2020,
+    "group": "HYPERCARS",
+    "car_ordinal": 3449,
+    "weight": 1680
+  },
+  {
+    "model": "3-Eleven",
+    "maker": "Lotus",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2541,
+    "weight": 954
+  },
+  {
+    "model": "Exige S",
+    "maker": "Lotus",
+    "year": 2012,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1523,
+    "weight": 1176
+  },
+  {
+    "model": "Elise Series 1 Sport 190",
+    "maker": "Lotus",
+    "year": 1999,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1376,
+    "weight": 670
+  },
+  {
+    "model": "Elise GT1",
+    "maker": "Lotus",
+    "year": 1997,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 2825,
+    "weight": 1100
+  },
+  {
+    "model": "Elan Sprint",
+    "maker": "Lotus",
+    "year": 1971,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 330,
+    "weight": 744
+  },
+  {
+    "model": "O3+",
+    "maker": "Lynk&Co",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3677,
+    "weight": 1615
+  },
+  {
+    "model": "#100 Cyan Racing 03",
+    "maker": "Lynk&Co",
+    "year": 2020,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3552,
+    "weight": 1320
+  },
+  {
+    "model": "Levante S",
+    "maker": "Maserati",
+    "year": 2017,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2865,
+    "weight": 2109
+  },
+  {
+    "model": "Gran Turismo S",
+    "maker": "Maserati",
+    "year": 2010,
+    "group": "GT CARS",
+    "car_ordinal": 1304,
+    "weight": 1881
+  },
+  {
+    "model": "Gran Turismo S Forza Edition",
+    "maker": "Maserati",
+    "year": 2010,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2788,
+    "weight": 1400
+  },
+  {
+    "model": "MC12 Versione Corsa",
+    "maker": "Maserati",
+    "year": 2008,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3082,
+    "weight": 1200
+  },
+  {
+    "model": "8CTF",
+    "maker": "Maserati",
+    "year": 1939,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2068,
+    "weight": 800
+  },
+  {
+    "model": "MX-5",
+    "maker": "Mazda",
+    "year": 2016,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2267,
+    "weight": 1048
+  },
+  {
+    "model": "MX-5",
+    "maker": "Mazda",
+    "year": 2013,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2004,
+    "weight": 1176
+  },
+  {
+    "model": "RX-8 R3",
+    "maker": "Mazda",
+    "year": 2011,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1426,
+    "weight": 1390
+  },
+  {
+    "model": "Mazdaspeed MX-5",
+    "maker": "Mazda",
+    "year": 2005,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 2171,
+    "weight": 1147
+  },
+  {
+    "model": "RX-7 Spirit R Type-A",
+    "maker": "Mazda",
+    "year": 2002,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 425,
+    "weight": 1270
+  },
+  {
+    "model": "RX-7",
+    "maker": "Mazda",
+    "year": 1997,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 424,
+    "weight": 1284
+  },
+  {
+    "model": "MX-5 Miata",
+    "maker": "Mazda",
+    "year": 1994,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1110,
+    "weight": 1057
+  },
+  {
+    "model": "323 GT-R",
+    "maker": "Mazda",
+    "year": 1992,
+    "group": "RETRO RALLY",
+    "car_ordinal": 2209,
+    "weight": 1210
+  },
+  {
+    "model": "Savanna RX-7",
+    "maker": "Mazda",
+    "year": 1990,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 423,
+    "weight": 1352
+  },
+  {
+    "model": "765LT",
+    "maker": "McLaren",
+    "year": 2021,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3484,
+    "weight": 1339
+  },
+  {
+    "model": "620R",
+    "maker": "McLaren",
+    "year": 2021,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3655,
+    "weight": 1420
+  },
+  {
+    "model": "GT",
+    "maker": "McLaren",
+    "year": 2020,
+    "group": "SUPER GT",
+    "car_ordinal": 3437,
+    "weight": 1535
+  },
+  {
+    "model": "720S Spider",
+    "maker": "McLaren",
+    "year": 2019,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3154,
+    "weight": 1468
+  },
+  {
+    "model": "Speedtail",
+    "maker": "McLaren",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3156,
+    "weight": 1597
+  },
+  {
+    "model": "720S Coup�",
+    "maker": "McLaren",
+    "year": 2018,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2846,
+    "weight": 1419
+  },
+  {
+    "model": "Senna",
+    "maker": "McLaren",
+    "year": 2018,
+    "group": "HYPERCARS",
+    "car_ordinal": 2988,
+    "weight": 1309
+  },
+  {
+    "model": "600LT Coup�",
+    "maker": "McLaren",
+    "year": 2018,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3153,
+    "weight": 1356
+  },
+  {
+    "model": "650S Coup�",
+    "maker": "McLaren",
+    "year": 2015,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2189,
+    "weight": 1428
+  },
+  {
+    "model": "570S Coup�",
+    "maker": "McLaren",
+    "year": 2015,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2472,
+    "weight": 1452
+  },
+  {
+    "model": "650S Spider",
+    "maker": "McLaren",
+    "year": 2015,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3087,
+    "weight": 1468
+  },
+  {
+    "model": "P1",
+    "maker": "McLaren",
+    "year": 2013,
+    "group": "HYPERCARS",
+    "car_ordinal": 1667,
+    "weight": 1495
+  },
+  {
+    "model": "F1 GT",
+    "maker": "McLaren",
+    "year": 1997,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 338,
+    "weight": 1120
+  },
+  {
+    "model": "F1",
+    "maker": "McLaren",
+    "year": 1993,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 1314,
+    "weight": 1288
+  },
+  {
+    "model": "Mercedes-AMG ONE",
+    "maker": "Mercedes-AMG",
+    "year": 2021,
+    "group": "HYPERCARS",
+    "car_ordinal": 3650,
+    "weight": 1695
+  },
+  {
+    "model": "GT Black Series",
+    "maker": "Mercedes-AMG",
+    "year": 2021,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3616,
+    "weight": 1640
+  },
+  {
+    "model": "GT 4-Door Coup�",
+    "maker": "Mercedes-AMG",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3064,
+    "weight": 2045
+  },
+  {
+    "model": "E 63 S",
+    "maker": "Mercedes-AMG",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3250,
+    "weight": 2048
+  },
+  {
+    "model": "GT R",
+    "maker": "Mercedes-AMG",
+    "year": 2017,
+    "group": "SUPER GT",
+    "car_ordinal": 2654,
+    "weight": 1555
+  },
+  {
+    "model": "C 63 S Coup�",
+    "maker": "Mercedes-AMG",
+    "year": 2016,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2471,
+    "weight": 1800
+  },
+  {
+    "model": "GT S",
+    "maker": "Mercedes-AMG",
+    "year": 2015,
+    "group": "SUPER GT",
+    "car_ordinal": 2242,
+    "weight": 1621
+  },
+  {
+    "model": "X-Class",
+    "maker": "Mercedes-Benz",
+    "year": 2018,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3063,
+    "weight": 2161
+  },
+  {
+    "model": "#24 Tankpool24 Racing Truck",
+    "maker": "Mercedes-Benz",
+    "year": 2015,
+    "group": "TRUCKS",
+    "car_ordinal": 2424,
+    "weight": 5500
+  },
+  {
+    "model": "#24 Tankpool24 Racing Truck Forza Edition",
+    "maker": "Mercedes-Benz",
+    "year": 2015,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2947,
+    "weight": 4750
+  },
+  {
+    "model": "Unimog U5023",
+    "maker": "Mercedes-Benz",
+    "year": 2014,
+    "group": "TRUCKS",
+    "car_ordinal": 2986,
+    "weight": 7000
+  },
+  {
+    "model": "G 63 AMG 6x6",
+    "maker": "Mercedes-Benz",
+    "year": 2014,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3107,
+    "weight": 4105
+  },
+  {
+    "model": "G 65 AMG",
+    "maker": "Mercedes-Benz",
+    "year": 2013,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 1627,
+    "weight": 2580
+  },
+  {
+    "model": "A 45 AMG",
+    "maker": "Mercedes-Benz",
+    "year": 2013,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 1658,
+    "weight": 1480
+  },
+  {
+    "model": "E 63 AMG",
+    "maker": "Mercedes-Benz",
+    "year": 2013,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2021,
+    "weight": 1940
+  },
+  {
+    "model": "C 63 AMG Coup� Black Series",
+    "maker": "Mercedes-Benz",
+    "year": 2012,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 1500,
+    "weight": 1748
+  },
+  {
+    "model": "SLK 55 AMG",
+    "maker": "Mercedes-Benz",
+    "year": 2012,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1525,
+    "weight": 1600
+  },
+  {
+    "model": "SLS AMG",
+    "maker": "Mercedes-Benz",
+    "year": 2011,
+    "group": "SUPER GT",
+    "car_ordinal": 1202,
+    "weight": 1478
+  },
+  {
+    "model": "SL 65 AMG Black Series",
+    "maker": "Mercedes-Benz",
+    "year": 2009,
+    "group": "SUPER GT",
+    "car_ordinal": 1090,
+    "weight": 1912
+  },
+  {
+    "model": "AMG CLK GTR",
+    "maker": "Mercedes-Benz",
+    "year": 1998,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 568,
+    "weight": 1440
+  },
+  {
+    "model": "AMG CLK GTR Forza Edition",
+    "maker": "Mercedes-Benz",
+    "year": 1998,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 2948,
+    "weight": 1050
+  },
+  {
+    "model": "190E 2.5-16 Evolution II",
+    "maker": "Mercedes-Benz",
+    "year": 1990,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1296,
+    "weight": 1340
+  },
+  {
+    "model": "AMG Hammer Coupe",
+    "maker": "Mercedes-Benz",
+    "year": 1987,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 3176,
+    "weight": 1651
+  },
+  {
+    "model": "300 SLR",
+    "maker": "Mercedes-Benz",
+    "year": 1955,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1559,
+    "weight": 900
+  },
+  {
+    "model": "300 SL Coup�",
+    "maker": "Mercedes-Benz",
+    "year": 1954,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 251,
+    "weight": 1343
+  },
+  {
+    "model": "W154",
+    "maker": "Mercedes-Benz",
+    "year": 1939,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2069,
+    "weight": 1217
+  },
+  {
+    "model": "SSK",
+    "maker": "Mercedes-Benz",
+    "year": 1929,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 3026,
+    "weight": 1690
+  },
+  {
+    "model": "Cyclone Spoiler",
+    "maker": "Mercury",
+    "year": 1970,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 3206,
+    "weight": 1781
+  },
+  {
+    "model": "Manx",
+    "maker": "Meyers",
+    "year": 1968,
+    "group": "CULT CARS",
+    "car_ordinal": 2416,
+    "weight": 560
+  },
+  {
+    "model": "Manx Forza Edition",
+    "maker": "Meyers",
+    "year": 1968,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3570,
+    "weight": 500
+  },
+  {
+    "model": "MG6 Xpower",
+    "maker": "MG",
+    "year": 2021,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3689,
+    "weight": 1540
+  },
+  {
+    "model": "#20 MG6 Xpower",
+    "maker": "MG",
+    "year": 2020,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3537,
+    "weight": 1320
+  },
+  {
+    "model": "MG3",
+    "maker": "MG",
+    "year": 2015,
+    "group": "HOT HATCH",
+    "car_ordinal": 2173,
+    "weight": 1155
+  },
+  {
+    "model": "Xpower SV-R",
+    "maker": "MG",
+    "year": 2005,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 3271,
+    "weight": 1540
+  },
+  {
+    "model": "Metro 6R4",
+    "maker": "MG",
+    "year": 1986,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2147,
+    "weight": 1030
+  },
+  {
+    "model": "John Cooper Works GP",
+    "maker": "Mini",
+    "year": 2021,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 3534,
+    "weight": 1295
+  },
+  {
+    "model": "John Cooper Works Countryman ALL4",
+    "maker": "Mini",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3131,
+    "weight": 1657
+  },
+  {
+    "model": "X-Raid John Cooper Works Buggy",
+    "maker": "Mini",
+    "year": 2018,
+    "group": "OFFROAD",
+    "car_ordinal": 3132,
+    "weight": 1963
+  },
+  {
+    "model": "X-Raid ALL4 Racing Countryman",
+    "maker": "Mini",
+    "year": 2013,
+    "group": "OFFROAD",
+    "car_ordinal": 2148,
+    "weight": 1950
+  },
+  {
+    "model": "John Cooper Works GP",
+    "maker": "Mini",
+    "year": 2012,
+    "group": "HOT HATCH",
+    "car_ordinal": 2003,
+    "weight": 1160
+  },
+  {
+    "model": "John Cooper Works",
+    "maker": "Mini",
+    "year": 2009,
+    "group": "HOT HATCH",
+    "car_ordinal": 1098,
+    "weight": 1225
+  },
+  {
+    "model": "Cooper S",
+    "maker": "Mini",
+    "year": 1965,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 1662,
+    "weight": 671
+  },
+  {
+    "model": "Cooper S Forza Edition",
+    "maker": "Mini",
+    "year": 1965,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2699,
+    "weight": 650
+  },
+  {
+    "model": "Lancer Evolution X GSR",
+    "maker": "Mitsubishi",
+    "year": 2008,
+    "group": "MODERN RALLY",
+    "car_ordinal": 1009,
+    "weight": 1540
+  },
+  {
+    "model": "Lancer Evolution X GSR \"Welcome Pack",
+    "maker": "Mitsubishi",
+    "year": 2008,
+    "group": "MODERN RALLY",
+    "car_ordinal": 3683,
+    "weight": 1540
+  },
+  {
+    "model": "Lancer Evolution IX MR",
+    "maker": "Mitsubishi",
+    "year": 2006,
+    "group": "MODERN RALLY",
+    "car_ordinal": 374,
+    "weight": 1490
+  },
+  {
+    "model": "Lancer Evolution VIII MR",
+    "maker": "Mitsubishi",
+    "year": 2004,
+    "group": "MODERN RALLY",
+    "car_ordinal": 378,
+    "weight": 1410
+  },
+  {
+    "model": "Lancer Evolution VI GSR",
+    "maker": "Mitsubishi",
+    "year": 1999,
+    "group": "RETRO RALLY",
+    "car_ordinal": 375,
+    "weight": 1280
+  },
+  {
+    "model": "GTO",
+    "maker": "Mitsubishi",
+    "year": 1997,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 357,
+    "weight": 1680
+  },
+  {
+    "model": "Eclipse GSX",
+    "maker": "Mitsubishi",
+    "year": 1995,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 327,
+    "weight": 1451
+  },
+  {
+    "model": "Galant VR-4",
+    "maker": "Mitsubishi",
+    "year": 1992,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1381,
+    "weight": 1350
+  },
+  {
+    "model": "Starion ESI-R",
+    "maker": "Mitsubishi",
+    "year": 1988,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1297,
+    "weight": 1400
+  },
+  {
+    "model": "3 Wheeler",
+    "maker": "Morgan",
+    "year": 2014,
+    "group": "CULT CARS",
+    "car_ordinal": 2562,
+    "weight": 544
+  },
+  {
+    "model": "Mini-Traveller",
+    "maker": "Morris",
+    "year": 1965,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3142,
+    "weight": 674
+  },
+  {
+    "model": "Minor 1000",
+    "maker": "Morris",
+    "year": 1953,
+    "group": "CULT CARS",
+    "car_ordinal": 2911,
+    "weight": 800
+  },
+  {
+    "model": "Minor 1000 Forza Edition",
+    "maker": "Morris",
+    "year": 1953,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2964,
+    "weight": 650
+  },
+  {
+    "model": "Minor Series II Traveler",
+    "maker": "Morris",
+    "year": 1953,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3116,
+    "weight": 797
+  },
+  {
+    "model": "MT900S",
+    "maker": "Mosler",
+    "year": 2010,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1246,
+    "weight": 1125
+  },
+  {
+    "model": "MT900 GT3",
+    "maker": "Mosler",
+    "year": 2006,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3495,
+    "weight": 1275
+  },
+  {
+    "model": "Napier-Railton",
+    "maker": "Napier",
+    "year": 1933,
+    "group": "VINTAGE RACERS",
+    "car_ordinal": 2989,
+    "weight": 2049
+  },
+  {
+    "model": "EP9",
+    "maker": "Nio",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 3366,
+    "weight": 1750
+  },
+  {
+    "model": "Z",
+    "maker": "Nissan",
+    "year": 2023,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3620,
+    "weight": 1604
+  },
+  {
+    "model": "Nissan �Altimaniac�",
+    "maker": "Nissan",
+    "year": 2021,
+    "group": "DRIFT CARS",
+    "car_ordinal": 9999,
+    "weight": 1438
+  },
+  {
+    "model": "GT-R Nismo (R35)",
+    "maker": "Nissan",
+    "year": 2020,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3622,
+    "weight": 1754
+  },
+  {
+    "model": "370Z Nismo",
+    "maker": "Nissan",
+    "year": 2019,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3307,
+    "weight": 1537
+  },
+  {
+    "model": "Sentra Nismo",
+    "maker": "Nissan",
+    "year": 2018,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2874,
+    "weight": 1378
+  },
+  {
+    "model": "GT-R (R35)",
+    "maker": "Nissan",
+    "year": 2017,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2618,
+    "weight": 1784
+  },
+  {
+    "model": "Titan Warrior Concept",
+    "maker": "Nissan",
+    "year": 2016,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2662,
+    "weight": 3351
+  },
+  {
+    "model": "GT-R Black Edition (R35)",
+    "maker": "Nissan",
+    "year": 2012,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2002,
+    "weight": 1763
+  },
+  {
+    "model": "370Z",
+    "maker": "Nissan",
+    "year": 2010,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1103,
+    "weight": 1482
+  },
+  {
+    "model": "Donut Media 350Z �Hi car�",
+    "maker": "Nissan",
+    "year": 2004,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3742,
+    "weight": 1615
+  },
+  {
+    "model": "Donut Media 350Z �Low car�",
+    "maker": "Nissan",
+    "year": 2004,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3743,
+    "weight": 1592
+  },
+  {
+    "model": "Pickup #23 Rally Raid",
+    "maker": "Nissan",
+    "year": 2004,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2744,
+    "weight": 2150
+  },
+  {
+    "model": "Fairlady Z",
+    "maker": "Nissan",
+    "year": 2003,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 344,
+    "weight": 1501
+  },
+  {
+    "model": "Fairlady Z Forza Edition",
+    "maker": "Nissan",
+    "year": 2003,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2951,
+    "weight": 1250
+  },
+  {
+    "model": "Skyline GT-R V-Spec II",
+    "maker": "Nissan",
+    "year": 2002,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 445,
+    "weight": 1560
+  },
+  {
+    "model": "Silvia Spec-R",
+    "maker": "Nissan",
+    "year": 2000,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 441,
+    "weight": 1240
+  },
+  {
+    "model": "R390 (GT1)",
+    "maker": "Nissan",
+    "year": 1998,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 567,
+    "weight": 1027
+  },
+  {
+    "model": "Silvia K's Aero",
+    "maker": "Nissan",
+    "year": 1998,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 2659,
+    "weight": 1265
+  },
+  {
+    "model": "Skyline GT-R V-Spec",
+    "maker": "Nissan",
+    "year": 1997,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1043,
+    "weight": 1539
+  },
+  {
+    "model": "NISMO GT-R LM",
+    "maker": "Nissan",
+    "year": 1995,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 2738,
+    "weight": 1606
+  },
+  {
+    "model": "Fairlady Z Version S Twin Turbo",
+    "maker": "Nissan",
+    "year": 1994,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 345,
+    "weight": 1520
+  },
+  {
+    "model": "Silvia K's",
+    "maker": "Nissan",
+    "year": 1994,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 440,
+    "weight": 1265
+  },
+  {
+    "model": "Skyline GT-R V-Spec",
+    "maker": "Nissan",
+    "year": 1993,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 444,
+    "weight": 1500
+  },
+  {
+    "model": "240SX SE",
+    "maker": "Nissan",
+    "year": 1993,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1282,
+    "weight": 1322
+  },
+  {
+    "model": "Silvia CLUB K's",
+    "maker": "Nissan",
+    "year": 1992,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 439,
+    "weight": 1150
+  },
+  {
+    "model": "Pulsar GTI-R",
+    "maker": "Nissan",
+    "year": 1990,
+    "group": "RETRO RALLY",
+    "car_ordinal": 3257,
+    "weight": 1240
+  },
+  {
+    "model": "Skyline GTS-R (HR31)",
+    "maker": "Nissan",
+    "year": 1987,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 2512,
+    "weight": 1345
+  },
+  {
+    "model": "Safari Turbo",
+    "maker": "Nissan",
+    "year": 1985,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2822,
+    "weight": 1665
+  },
+  {
+    "model": "Skyline H/T 2000GT-R",
+    "maker": "Nissan",
+    "year": 1973,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 2270,
+    "weight": 1145
+  },
+  {
+    "model": "Skyline 2000GT-R",
+    "maker": "Nissan",
+    "year": 1971,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1042,
+    "weight": 1100
+  },
+  {
+    "model": "Fairlady Z 432",
+    "maker": "Nissan",
+    "year": 1969,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 343,
+    "weight": 1047
+  },
+  {
+    "model": "M600",
+    "maker": "Noble",
+    "year": 2010,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 1253,
+    "weight": 1250
+  },
+  {
+    "model": "M400",
+    "maker": "Noble",
+    "year": 2006,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3331,
+    "weight": 1060
+  },
+  {
+    "model": "Toronado",
+    "maker": "Oldmobile",
+    "year": 1966,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 3201,
+    "weight": 2039
+  },
+  {
+    "model": "Manta 400",
+    "maker": "Opel",
+    "year": 1984,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 2420,
+    "weight": 990
+  },
+  {
+    "model": "Huayra BC",
+    "maker": "Pagani",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 2647,
+    "weight": 1218
+  },
+  {
+    "model": "Huayra BC Forza Edition",
+    "maker": "Pagani",
+    "year": 2016,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3572,
+    "weight": 1100
+  },
+  {
+    "model": "Zonda R",
+    "maker": "Pagani",
+    "year": 2010,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 1175,
+    "weight": 1150
+  },
+  {
+    "model": "Zonda Cinque Roadster",
+    "maker": "Pagani",
+    "year": 2009,
+    "group": "HYPERCARS",
+    "car_ordinal": 1369,
+    "weight": 1296
+  },
+  {
+    "model": "Trident",
+    "maker": "Peel",
+    "year": 1965,
+    "group": "CULT CLASSICS",
+    "car_ordinal": 3005,
+    "weight": 160
+  },
+  {
+    "model": "P50",
+    "maker": "Peel",
+    "year": 1962,
+    "group": "CULT CLASSICS",
+    "car_ordinal": 2987,
+    "weight": 141
+  },
+  {
+    "model": "The Cholla",
+    "maker": "Penhall",
+    "year": 2011,
+    "group": "UNLIMITED BUGGIES",
+    "car_ordinal": 2515,
+    "weight": 998
+  },
+  {
+    "model": "207 Super 2000",
+    "maker": "Peugeot",
+    "year": 2007,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 615,
+    "weight": 1100
+  },
+  {
+    "model": "205 Rallye",
+    "maker": "Peugeot",
+    "year": 1991,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 3180,
+    "weight": 790
+  },
+  {
+    "model": "205 Turbo 16",
+    "maker": "Peugeot",
+    "year": 1984,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1591,
+    "weight": 1145
+  },
+  {
+    "model": "Cuda 426 Hemi",
+    "maker": "Plymouth",
+    "year": 1971,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1277,
+    "weight": 1760
+  },
+  {
+    "model": "Barracuda Formula-S",
+    "maker": "Plymouth",
+    "year": 1968,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 281,
+    "weight": 1574
+  },
+  {
+    "model": "Fury",
+    "maker": "Plymouth",
+    "year": 1958,
+    "group": "RODS AND CUSTOMS",
+    "car_ordinal": 2216,
+    "weight": 1631
+  },
+  {
+    "model": "RZR Pro XP Factory Racing Limited Edition",
+    "maker": "Polaris",
+    "year": 2021,
+    "group": "UTV'S",
+    "car_ordinal": 3686,
+    "weight": 934
+  },
+  {
+    "model": "RZR Pro XP Ultimate",
+    "maker": "Polaris",
+    "year": 2021,
+    "group": "UTV'S",
+    "car_ordinal": 3687,
+    "weight": 848
+  },
+  {
+    "model": "RZR XP 1000 EPS",
+    "maker": "Polaris",
+    "year": 2015,
+    "group": "UTV'S",
+    "car_ordinal": 2521,
+    "weight": 694
+  },
+  {
+    "model": "Firebird Trans Am GTA",
+    "maker": "Pontiac",
+    "year": 1987,
+    "group": "RETRO MUSCLE",
+    "car_ordinal": 1045,
+    "weight": 1580
+  },
+  {
+    "model": "Firebird Trans Am GTA Forza Edition",
+    "maker": "Pontiac",
+    "year": 1987,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3057,
+    "weight": 1460
+  },
+  {
+    "model": "Firebird Trans Am",
+    "maker": "Pontiac",
+    "year": 1977,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1276,
+    "weight": 1724
+  },
+  {
+    "model": "Firebird Trans Am SD-455",
+    "maker": "Pontiac",
+    "year": 1973,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1005,
+    "weight": 1676
+  },
+  {
+    "model": "GTO",
+    "maker": "Pontiac",
+    "year": 1965,
+    "group": "CLASSIC MUSCLE",
+    "car_ordinal": 1285,
+    "weight": 1573
+  },
+  {
+    "model": "Mission R",
+    "maker": "Porsche",
+    "year": 2022,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3698,
+    "weight": 1500
+  },
+  {
+    "model": "911 GT3",
+    "maker": "Porsche",
+    "year": 2021,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3667,
+    "weight": 1435
+  },
+  {
+    "model": "Taycan Turbo S",
+    "maker": "Porsche",
+    "year": 2020,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3445,
+    "weight": 2323
+  },
+  {
+    "model": "Taycan Turbo S \"Welcome Pack",
+    "maker": "Porsche",
+    "year": 2020,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3685,
+    "weight": 1750
+  },
+  {
+    "model": "#70 Porsche Motorsport 935",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3214,
+    "weight": 1380
+  },
+  {
+    "model": "911 GT3 RS",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3072,
+    "weight": 1340
+  },
+  {
+    "model": "Macan Turbo",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 3074,
+    "weight": 1940
+  },
+  {
+    "model": "911 Carrera S",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3123,
+    "weight": 1515
+  },
+  {
+    "model": "911 Speedster",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3215,
+    "weight": 1540
+  },
+  {
+    "model": "911 GT3 RS Forza Edition",
+    "maker": "Porsche",
+    "year": 2019,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3574,
+    "weight": 1290
+  },
+  {
+    "model": "911 GT2 RS",
+    "maker": "Porsche",
+    "year": 2018,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2755,
+    "weight": 1450
+  },
+  {
+    "model": "Cayenne Turbo",
+    "maker": "Porsche",
+    "year": 2018,
+    "group": "SPORTS UTILITY HEROES",
+    "car_ordinal": 2773,
+    "weight": 2175
+  },
+  {
+    "model": "718 Cayman GTS",
+    "maker": "Porsche",
+    "year": 2018,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3117,
+    "weight": 1422
+  },
+  {
+    "model": "Macan LPR Rally Raid",
+    "maker": "Porsche",
+    "year": 2018,
+    "group": "OFFROAD",
+    "car_ordinal": 3187,
+    "weight": 2222
+  },
+  {
+    "model": "Panamera Turbo",
+    "maker": "Porsche",
+    "year": 2017,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2741,
+    "weight": 1995
+  },
+  {
+    "model": "911 GT3 RS",
+    "maker": "Porsche",
+    "year": 2016,
+    "group": "MODERN SPORT GT",
+    "car_ordinal": 2528,
+    "weight": 1420
+  },
+  {
+    "model": "Cayman GT4",
+    "maker": "Porsche",
+    "year": 2016,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2529,
+    "weight": 1340
+  },
+  {
+    "model": "Cayman GTS",
+    "maker": "Porsche",
+    "year": 2015,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2293,
+    "weight": 1345
+  },
+  {
+    "model": "911 Turbo S",
+    "maker": "Porsche",
+    "year": 2014,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 2289,
+    "weight": 1636
+  },
+  {
+    "model": "918 Spyder",
+    "maker": "Porsche",
+    "year": 2014,
+    "group": "HYPERCARS",
+    "car_ordinal": 2290,
+    "weight": 1675
+  },
+  {
+    "model": "911 GT2 RS",
+    "maker": "Porsche",
+    "year": 2012,
+    "group": "TRACK TOYS",
+    "car_ordinal": 1539,
+    "weight": 1370
+  },
+  {
+    "model": "911 GT3 RS 4.0",
+    "maker": "Porsche",
+    "year": 2012,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2297,
+    "weight": 1360
+  },
+  {
+    "model": "911 Sport Classic",
+    "maker": "Porsche",
+    "year": 2010,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1234,
+    "weight": 1479
+  },
+  {
+    "model": "911 GT3",
+    "maker": "Porsche",
+    "year": 2004,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 262,
+    "weight": 1433
+  },
+  {
+    "model": "Carrera GT",
+    "maker": "Porsche",
+    "year": 2003,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 292,
+    "weight": 1478
+  },
+  {
+    "model": "911 GT1 Strassenversion",
+    "maker": "Porsche",
+    "year": 1998,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 641,
+    "weight": 1200
+  },
+  {
+    "model": "911 GT2",
+    "maker": "Porsche",
+    "year": 1995,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 261,
+    "weight": 1295
+  },
+  {
+    "model": "911 Carrera 2 by Gunther Werks",
+    "maker": "Porsche",
+    "year": 1995,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3160,
+    "weight": 1214
+  },
+  {
+    "model": "968 Turbo S",
+    "maker": "Porsche",
+    "year": 1993,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 2534,
+    "weight": 1300
+  },
+  {
+    "model": "911 Reimagined by Singer � DLS",
+    "maker": "Porsche",
+    "year": 1990,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3248,
+    "weight": 1050
+  },
+  {
+    "model": "944 Turbo",
+    "maker": "Porsche",
+    "year": 1989,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 268,
+    "weight": 1413
+  },
+  {
+    "model": "#65 Rothsport Racing 911 'Desert Flyer'",
+    "maker": "Porsche",
+    "year": 1989,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3188,
+    "weight": 1288
+  },
+  {
+    "model": "959",
+    "maker": "Porsche",
+    "year": 1987,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 269,
+    "weight": 1447
+  },
+  {
+    "model": "#185 959 Prodrive Rally Raid",
+    "maker": "Porsche",
+    "year": 1985,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3031,
+    "weight": 1507
+  },
+  {
+    "model": "911 Turbo 3.3",
+    "maker": "Porsche",
+    "year": 1982,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 265,
+    "weight": 1300
+  },
+  {
+    "model": "911 Carrera RS",
+    "maker": "Porsche",
+    "year": 1973,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 260,
+    "weight": 1111
+  },
+  {
+    "model": "#23 917/20",
+    "maker": "Porsche",
+    "year": 1971,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2869,
+    "weight": 909
+  },
+  {
+    "model": "914/6",
+    "maker": "Porsche",
+    "year": 1970,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 266,
+    "weight": 996
+  },
+  {
+    "model": "#3 917 LH",
+    "maker": "Porsche",
+    "year": 1970,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 2549,
+    "weight": 927
+  },
+  {
+    "model": "356 C Cabriolet Emory Special",
+    "maker": "Porsche",
+    "year": 1960,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 3150,
+    "weight": 975
+  },
+  {
+    "model": "356 A 1600 Super",
+    "maker": "Porsche",
+    "year": 1959,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 3036,
+    "weight": 876
+  },
+  {
+    "model": "550A Spyder",
+    "maker": "Porsche",
+    "year": 1955,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1281,
+    "weight": 685
+  },
+  {
+    "model": "RXC Turbo",
+    "maker": "Radical",
+    "year": 2015,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 2486,
+    "weight": 940
+  },
+  {
+    "model": "Tachyon Speed",
+    "maker": "RAESR",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3196,
+    "weight": 1451
+  },
+  {
+    "model": "2500 Power Wagon",
+    "maker": "RAM",
+    "year": 2017,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2838,
+    "weight": 3195
+  },
+  {
+    "model": "Supervan III",
+    "maker": "Reliant",
+    "year": 1972,
+    "group": "CULT CARS",
+    "car_ordinal": 2563,
+    "weight": 455
+  },
+  {
+    "model": "MEGANE R.S.",
+    "maker": "Renault",
+    "year": 2018,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 3134,
+    "weight": 1430
+  },
+  {
+    "model": "Clio R.S. 16 Concept",
+    "maker": "Renault",
+    "year": 2016,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 3182,
+    "weight": 1205
+  },
+  {
+    "model": "Clio R.S. 200 EDC",
+    "maker": "Renault",
+    "year": 2013,
+    "group": "HOT HATCH",
+    "car_ordinal": 2022,
+    "weight": 1218
+  },
+  {
+    "model": "Megane RS 250",
+    "maker": "Renault",
+    "year": 2010,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 1204,
+    "weight": 1387
+  },
+  {
+    "model": "Clio R.S.",
+    "maker": "Renault",
+    "year": 2010,
+    "group": "HOT HATCH",
+    "car_ordinal": 1264,
+    "weight": 1204
+  },
+  {
+    "model": "M�gane R26.R",
+    "maker": "Renault",
+    "year": 2008,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 3129,
+    "weight": 1230
+  },
+  {
+    "model": "Clio Williams",
+    "maker": "Renault",
+    "year": 1993,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2149,
+    "weight": 1013
+  },
+  {
+    "model": "5 Turbo",
+    "maker": "Renault",
+    "year": 1980,
+    "group": "RETRO RALLY",
+    "car_ordinal": 634,
+    "weight": 970
+  },
+  {
+    "model": "4L Export",
+    "maker": "Renault",
+    "year": 1968,
+    "group": "CULT CARS",
+    "car_ordinal": 3261,
+    "weight": 594
+  },
+  {
+    "model": "8 Gordini",
+    "maker": "Renault",
+    "year": 1967,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 3395,
+    "weight": 855
+  },
+  {
+    "model": "Nevera",
+    "maker": "Rimac",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3625,
+    "weight": 2150
+  },
+  {
+    "model": "Concept Two",
+    "maker": "Rimac",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3140,
+    "weight": 1950
+  },
+  {
+    "model": "#37 Polaris RZR Pro 4 Truck",
+    "maker": "RJ Anderson",
+    "year": 2021,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 3662,
+    "weight": 1964
+  },
+  {
+    "model": "#37 Polaris RZR-Rockstar Energy Pro 2 Truck",
+    "maker": "RJ Anderson",
+    "year": 2016,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2663,
+    "weight": 1701
+  },
+  {
+    "model": "S1",
+    "maker": "Saleen",
+    "year": 2018,
+    "group": "MODERN SUPERCARS",
+    "car_ordinal": 3276,
+    "weight": 1218
+  },
+  {
+    "model": "S7",
+    "maker": "Saleen",
+    "year": 2004,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 432,
+    "weight": 1250
+  },
+  {
+    "model": "962CR",
+    "maker": "Schuppan",
+    "year": 1993,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 3288,
+    "weight": 1050
+  },
+  {
+    "model": "Cobra 427 S/C",
+    "maker": "Shelby",
+    "year": 1965,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 306,
+    "weight": 1066
+  },
+  {
+    "model": "Cobra Daytona Coupe",
+    "maker": "Shelby",
+    "year": 1965,
+    "group": "CLASSIC RACERS",
+    "car_ordinal": 1155,
+    "weight": 1043
+  },
+  {
+    "model": "700R",
+    "maker": "SIERRA Cars",
+    "year": 2021,
+    "group": "UTV'S",
+    "car_ordinal": 3665,
+    "weight": 365
+  },
+  {
+    "model": "RX3",
+    "maker": "SIERRA Cars",
+    "year": 2021,
+    "group": "UTV'S",
+    "car_ordinal": 3540,
+    "weight": 420
+  },
+  {
+    "model": "#23 Yokohama Alpha",
+    "maker": "SIERRA Cars",
+    "year": 2020,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 3539,
+    "weight": 522
+  },
+  {
+    "model": "STI 209",
+    "maker": "Subaru",
+    "year": 2019,
+    "group": "MODERN RALLY",
+    "car_ordinal": 3412,
+    "weight": 1581
+  },
+  {
+    "model": "WRX STI ARX Supercar",
+    "maker": "Subaru",
+    "year": 2018,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3241,
+    "weight": 1279
+  },
+  {
+    "model": "WRX STI",
+    "maker": "Subaru",
+    "year": 2015,
+    "group": "MODERN RALLY",
+    "car_ordinal": 2168,
+    "weight": 1536
+  },
+  {
+    "model": "BRZ",
+    "maker": "Subaru",
+    "year": 2013,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 1655,
+    "weight": 1254
+  },
+  {
+    "model": "WRX STI",
+    "maker": "Subaru",
+    "year": 2011,
+    "group": "MODERN RALLY",
+    "car_ordinal": 1323,
+    "weight": 1535
+  },
+  {
+    "model": "IMPREZA WRX STI",
+    "maker": "Subaru",
+    "year": 2008,
+    "group": "MODERN RALLY",
+    "car_ordinal": 1060,
+    "weight": 1540
+  },
+  {
+    "model": "IMPREZA WRX STI",
+    "maker": "Subaru",
+    "year": 2005,
+    "group": "MODERN RALLY",
+    "car_ordinal": 365,
+    "weight": 1504
+  },
+  {
+    "model": "IMPREZA WRX STi",
+    "maker": "Subaru",
+    "year": 2004,
+    "group": "MODERN RALLY",
+    "car_ordinal": 364,
+    "weight": 1483
+  },
+  {
+    "model": "Impreza 22B-STi Version",
+    "maker": "Subaru",
+    "year": 1998,
+    "group": "RETRO RALLY",
+    "car_ordinal": 363,
+    "weight": 1260
+  },
+  {
+    "model": "Legacy RS",
+    "maker": "Subaru",
+    "year": 1990,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1382,
+    "weight": 1356
+  },
+  {
+    "model": "BRAT GL",
+    "maker": "Subaru",
+    "year": 1980,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 2140,
+    "weight": 935
+  },
+  {
+    "model": "GR Supra",
+    "maker": "Toyota",
+    "year": 2020,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 3402,
+    "weight": 1541
+  },
+  {
+    "model": "Tundra RTD Pro",
+    "maker": "Toyota",
+    "year": 2020,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3419,
+    "weight": 2558
+  },
+  {
+    "model": "4Runner TRD Pro",
+    "maker": "Toyota",
+    "year": 2019,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3373,
+    "weight": 2155
+  },
+  {
+    "model": "Tacoma TRD Pro",
+    "maker": "Toyota",
+    "year": 2019,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 3374,
+    "weight": 2007
+  },
+  {
+    "model": "Land Cruiser Arctic Trucks AT37",
+    "maker": "Toyota",
+    "year": 2016,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2743,
+    "weight": 2265
+  },
+  {
+    "model": "86",
+    "maker": "Toyota",
+    "year": 2013,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2007,
+    "weight": 1240
+  },
+  {
+    "model": "Hilux Arctic Trucks AT38",
+    "maker": "Toyota",
+    "year": 2007,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2656,
+    "weight": 2150
+  },
+  {
+    "model": "Celica Sport Specialty II",
+    "maker": "Toyota",
+    "year": 2003,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 295,
+    "weight": 1161
+  },
+  {
+    "model": "Supra RZ",
+    "maker": "Toyota",
+    "year": 1998,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 461,
+    "weight": 1510
+  },
+  {
+    "model": "Supra RZ \"Welcome Pack",
+    "maker": "Toyota",
+    "year": 1998,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 3681,
+    "weight": 1475
+  },
+  {
+    "model": "MR2 GT",
+    "maker": "Toyota",
+    "year": 1995,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 398,
+    "weight": 1205
+  },
+  {
+    "model": "Celica GT-Four ST205",
+    "maker": "Toyota",
+    "year": 1994,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1034,
+    "weight": 1440
+  },
+  {
+    "model": "#1 T100 Baja Truck",
+    "maker": "Toyota",
+    "year": 1993,
+    "group": "UNLIMITED OFFROAD",
+    "car_ordinal": 2636,
+    "weight": 1814
+  },
+  {
+    "model": "Supra 2.0 GT",
+    "maker": "Toyota",
+    "year": 1992,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 460,
+    "weight": 1510
+  },
+  {
+    "model": "Celica GT-Four RC ST185",
+    "maker": "Toyota",
+    "year": 1992,
+    "group": "RETRO RALLY",
+    "car_ordinal": 1517,
+    "weight": 1460
+  },
+  {
+    "model": "MR2 SC",
+    "maker": "Toyota",
+    "year": 1989,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 1395,
+    "weight": 1188
+  },
+  {
+    "model": "Sprinter Trueno GT Apex",
+    "maker": "Toyota",
+    "year": 1985,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 455,
+    "weight": 950
+  },
+  {
+    "model": "FJ40",
+    "maker": "Toyota",
+    "year": 1979,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2566,
+    "weight": 1550
+  },
+  {
+    "model": "Celica GT",
+    "maker": "Toyota",
+    "year": 1974,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 1592,
+    "weight": 1085
+  },
+  {
+    "model": "2000GT",
+    "maker": "Toyota",
+    "year": 1968,
+    "group": "RARE CLASSICS",
+    "car_ordinal": 247,
+    "weight": 1157
+  },
+  {
+    "model": "Sports 800",
+    "maker": "Toyota",
+    "year": 1965,
+    "group": "CLASSIC SPORTS CARS",
+    "car_ordinal": 2469,
+    "weight": 603
+  },
+  {
+    "model": "Griffith",
+    "maker": "TVR",
+    "year": 2018,
+    "group": "MODERN SPORTS CARS",
+    "car_ordinal": 2993,
+    "weight": 1200
+  },
+  {
+    "model": "Sagaris",
+    "maker": "TVR",
+    "year": 2005,
+    "group": "RETRO SPORTS CARS",
+    "car_ordinal": 433,
+    "weight": 1078
+  },
+  {
+    "model": "Cerbera Speed 12",
+    "maker": "TVR",
+    "year": 1998,
+    "group": "RETRO SUPERCARS",
+    "car_ordinal": 296,
+    "weight": 975
+  },
+  {
+    "model": "Evolution Coupe 1020",
+    "maker": "Ultima",
+    "year": 2015,
+    "group": "EXTREME TRACK TOYS",
+    "car_ordinal": 2569,
+    "weight": 950
+  },
+  {
+    "model": "Corsa VXR",
+    "maker": "Vauxhall",
+    "year": 2016,
+    "group": "HOT HATCH",
+    "car_ordinal": 2427,
+    "weight": 1293
+  },
+  {
+    "model": "Monaro VXR",
+    "maker": "Vauxhall",
+    "year": 2005,
+    "group": "MODERN MUSCLE",
+    "car_ordinal": 397,
+    "weight": 1677
+  },
+  {
+    "model": "Lotus Carlton",
+    "maker": "Vauxhall",
+    "year": 1990,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 291,
+    "weight": 1652
+  },
+  {
+    "model": "Golf R",
+    "maker": "Volkswagen",
+    "year": 2021,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 3413,
+    "weight": 1497
+  },
+  {
+    "model": "#34 Volkswagen Andretti Rallycross Beetle",
+    "maker": "Volkswagen",
+    "year": 2017,
+    "group": "RALLY MONSTERS",
+    "car_ordinal": 3007,
+    "weight": 1210
+  },
+  {
+    "model": "Golf R",
+    "maker": "Volkswagen",
+    "year": 2014,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 2142,
+    "weight": 1476
+  },
+  {
+    "model": "Scirocco R",
+    "maker": "Volkswagen",
+    "year": 2011,
+    "group": "HOT HATCH",
+    "car_ordinal": 1428,
+    "weight": 1344
+  },
+  {
+    "model": "Golf R",
+    "maker": "Volkswagen",
+    "year": 2010,
+    "group": "SUPER HOT HATCH",
+    "car_ordinal": 1231,
+    "weight": 1446
+  },
+  {
+    "model": "Golf R32",
+    "maker": "Volkswagen",
+    "year": 2003,
+    "group": "HOT HATCH",
+    "car_ordinal": 354,
+    "weight": 1477
+  },
+  {
+    "model": "GTI VR6 Mk3",
+    "maker": "Volkswagen",
+    "year": 1998,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 1383,
+    "weight": 1270
+  },
+  {
+    "model": "Corrado VR6",
+    "maker": "Volkswagen",
+    "year": 1995,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 309,
+    "weight": 1240
+  },
+  {
+    "model": "Golf Gti 16v Mk2",
+    "maker": "Volkswagen",
+    "year": 1992,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 353,
+    "weight": 1100
+  },
+  {
+    "model": "Golf GTI",
+    "maker": "Volkswagen",
+    "year": 1983,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 2995,
+    "weight": 866
+  },
+  {
+    "model": "Pickup LX",
+    "maker": "Volkswagen",
+    "year": 1982,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3235,
+    "weight": 986
+  },
+  {
+    "model": "Scirocco S",
+    "maker": "Volkswagen",
+    "year": 1981,
+    "group": "RETRO HOT HATCH",
+    "car_ordinal": 1380,
+    "weight": 914
+  },
+  {
+    "model": "#1107 Desert Dingo Racing Stock Bug",
+    "maker": "Volkswagen",
+    "year": 1970,
+    "group": "BUGGIES",
+    "car_ordinal": 2258,
+    "weight": 982
+  },
+  {
+    "model": "Class 5/1600 Baja Bug",
+    "maker": "Volkswagen",
+    "year": 1969,
+    "group": "BUGGIES",
+    "car_ordinal": 2568,
+    "weight": 1089
+  },
+  {
+    "model": "Beetle",
+    "maker": "Volkswagen",
+    "year": 1963,
+    "group": "CULT CARS",
+    "car_ordinal": 1435,
+    "weight": 798
+  },
+  {
+    "model": "Type 2 De Luxe",
+    "maker": "Volkswagen",
+    "year": 1963,
+    "group": "CULT CARS",
+    "car_ordinal": 2151,
+    "weight": 1140
+  },
+  {
+    "model": "Beetle Forza Edition",
+    "maker": "Volkswagen",
+    "year": 1963,
+    "group": "TRACK TOYS",
+    "car_ordinal": 3577,
+    "weight": 700
+  },
+  {
+    "model": "V60 Polestar",
+    "maker": "Volvo",
+    "year": 2015,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 2586,
+    "weight": 1808
+  },
+  {
+    "model": "850 R",
+    "maker": "Volvo",
+    "year": 1997,
+    "group": "RETRO SALOONS",
+    "car_ordinal": 1387,
+    "weight": 1465
+  },
+  {
+    "model": "242 Turbo Evolution",
+    "maker": "Volvo",
+    "year": 1983,
+    "group": "CLASSIC RALLY",
+    "car_ordinal": 1299,
+    "weight": 1440
+  },
+  {
+    "model": "05RR",
+    "maker": "VUHL",
+    "year": 2017,
+    "group": "TRACK TOYS",
+    "car_ordinal": 2844,
+    "weight": 725
+  },
+  {
+    "model": "MB Jeep",
+    "maker": "Willys",
+    "year": 1945,
+    "group": "PICK-UP & 4X4'S",
+    "car_ordinal": 2049,
+    "weight": 969
+  },
+  {
+    "model": "Sunshine S",
+    "maker": "Wuling",
+    "year": 2013,
+    "group": "VANS AND UTILITY",
+    "car_ordinal": 3548,
+    "weight": 1265
+  },
+  {
+    "model": "P7",
+    "maker": "Xpeng",
+    "year": 2020,
+    "group": "SUPER SALOONS",
+    "car_ordinal": 3547,
+    "weight": 2060
+  },
+  {
+    "model": "TSR-S",
+    "maker": "Zenvo",
+    "year": 2019,
+    "group": "HYPERCARS",
+    "car_ordinal": 3212,
+    "weight": 1547
+  },
+  {
+    "model": "TS1",
+    "maker": "Zenvo",
+    "year": 2016,
+    "group": "HYPERCARS",
+    "car_ordinal": 2474,
+    "weight": 1688
+  },
+  {
+    "model": "#1 Audi Sport RS3 LMS",
+    "maker": "Audi",
+    "year": 2018,
+    "group": "FORZA TOURING",
+    "car_ordinal": 2852,
+    "weight": 1400
+}
+]
