@@ -107,7 +107,7 @@ func main() {
 	flag.BoolVar(&enableSSE, "sse", false, "Enable SSE endpoint.")
 	flag.BoolVar(&UI, "tui", false, "Run with TUI.")
 	flag.BoolVarP(&enableProfiling, "profiling", "p", false, "Enables pyroscope profiling for this app.")
-	flag.IntVar(&refreshRate, "refresh", 60, "Set refresh rate per second.")
+	flag.IntVar(&refreshRate, "refresh", 20, "Set refresh rate per second.")
 	flag.Lookup("json").NoOptDefVal = "true"
 	flag.Lookup("sse").NoOptDefVal = "true"
 	flag.Lookup("tui").NoOptDefVal = "true"
@@ -118,7 +118,6 @@ func main() {
 	if enableProfiling {
 		pyro.RunProfiling()
 	}
-
 	settings := types.Settings{
 		Temperature:     units.CELSIUS,
 		UdpAddress:      udpAddress,
@@ -127,6 +126,9 @@ func main() {
 		EnableSSE:       enableSSE,
 		RefreshRate:     refreshRate,
 	}
+	delay := 1000 / settings.RefreshRate
+	ticker := time.NewTicker(time.Duration(delay * int(time.Millisecond)))
+
 	carList, err := cars.ReadCarList("cars.json")
 	if err != nil {
 		log.Error(err)
@@ -162,6 +164,7 @@ func main() {
 		restoreConsole()
 		close(in)
 		close(ch)
+		ticker.Stop()
 		os.Exit(0)
 	}
 
@@ -234,27 +237,8 @@ func main() {
 					}
 				}
 			}
-		case packet = <-ch:
+		case <-ticker.C:
 			{
-			}
-			if !packet.IsPaused() {
-				continue
-			}
-
-			if Pack.TimestampMS == packet.TimestampMS {
-				continue
-			}
-
-			Pack = packet
-
-			if UI {
-				if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
-					result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
-					app.CurrentCar = result
-				}
-				Dyno.Update(&packet)
-
-				// TODO: Split rendering to a separate function that switches on view.
 				switch app.CurrentView {
 
 				case views.Dyno:
@@ -280,6 +264,27 @@ func main() {
 						out.WriteString(layout)
 					}
 				}
+			}
+		case packet = <-ch:
+			{
+			}
+			if !packet.IsPaused() {
+				continue
+			}
+
+			if Pack.TimestampMS == packet.TimestampMS {
+				continue
+			}
+
+			Pack = packet
+
+			if UI {
+				if cars.HasCarChanged(Pack.CarOrdinal, packet.CarOrdinal) {
+					result := cars.SetCurrentCar(app.CarList, packet.CarOrdinal)
+					app.CurrentCar = result
+				}
+				Dyno.Update(&packet)
+
 			}
 
 		}

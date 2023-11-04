@@ -1,0 +1,8 @@
+<main class="pt-4">
+  <h1 class="flex justify-center font-bold text-[48px]">{{title}}</h1>
+  <h1 class="flex justify-center font-bold text-[36px]">Visitor count: {{count}}</h1>
+  <h1 hx-ext="sse" sse-connect="/sse" sse-swap="message" class="flex justify-center font-bold text-[36px]"></h1>
+  <div class="flex justify-center space-x-2">
+    {{> partials/counter}}
+  </div>
+</main>

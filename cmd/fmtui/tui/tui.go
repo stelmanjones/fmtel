@@ -11,6 +11,7 @@ import (
 	"github.com/stelmanjones/fmtel/cmd/fmtui/pedals"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/tui/views"
 	"github.com/stelmanjones/fmtel/cmd/fmtui/types"
+	"github.com/stelmanjones/fmtel/internal"
 	"github.com/stelmanjones/fmtel/units"
 )
 
@@ -24,7 +25,7 @@ func TitleBar() (t string) {
 				Add(*pterm.
 					Bold.
 					ToStyle()).
-				Sprintf("\n\nFMTEL | Version: 0.1.1"))
+				Sprintf("\n\nFMTEL | %s", internal.VERSION))
 	return
 }
 
